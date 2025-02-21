@@ -1,12 +1,4 @@
 /************************************
-    File Name: style.css
-    Template Name: SeoTime
-    Created By: HTML Design
-    Website: https://html.design
-    Version: 1.0
-************************************/
-
-/************************************
     [Table of contents]
 
     1. IMPORT FILES
@@ -290,7 +282,7 @@ HEADER
 }
 
 .navbar-nav > li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .yamm .yamm-content ul li a,
@@ -301,7 +293,7 @@ HEADER
     border-bottom: 3px solid transparent;
     background-color: transparent !important;
     color: #25382f !important;
-    font-size: 15px;
+    font-size: 16px;
     padding: 17px 0 3px;
     font-weight: 400;
 }
@@ -383,7 +375,7 @@ HEADER
 
 .yamm .dropdown.yamm-fw .dropdown-menu {
     left: auto;
-    right: 0;
+    right: auto;
 }
 
 .yamm .yamm-content ul {
@@ -2829,6 +2821,11 @@ MISC
     border-radius: 500px;
 }
 
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
 .form-control {
     box-shadow: none !important;
     border: 1px solid rgba(255, 255, 255, 0.55);
@@ -3138,13 +3135,13 @@ mark,
     color: #ffffff;
     background: #3ac5c8;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #3ac5c8 1%, #0b509e 100%);
+    background: -moz-linear-gradient(45deg, #3a4dc8 1%, #0b509e 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #3ac5c8 1%, #0b509e 100%);
+    background: -webkit-linear-gradient(45deg, #3a4dc8 1%, #0b509e 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #3ac5c8 1%, #0b509e 100%);
+    background: linear-gradient(45deg, #3a4dc8 1%, #0b509e 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3ac5c8', endColorstr='#0b509e', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3a4dc8', endColorstr='#0b509e', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -3152,15 +3149,16 @@ mark,
 .navbar-right .lastlink:focus,
 .btn-primary:hover,
 .btn-primary:focus {
+
     background: #0b509e;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #0b509e 1%, #3ac5c8 100%);
+    background: -moz-linear-gradient(45deg, #0b509e 1%, #3a4dc8 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #0b509e 1%, #3ac5c8 100%);
+    background: -webkit-linear-gradient(45deg, #0b509e 1%, #3a4dc8 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #0b509e 1%, #3ac5c8 100%);
+    background: linear-gradient(45deg, #0b509e 1%, #3a4dc8 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b509e', endColorstr='#3ac5c8', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b509e', endColorstr='#3a4dc8', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
 
