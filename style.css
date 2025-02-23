@@ -3433,6 +3433,10 @@ RESPONSIVE
     color: black;
 }
 
+.white-text {
+  color: rgb(255, 255, 255);
+}
+
 .blue-text {
     color: blue;
 }
