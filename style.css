@@ -641,6 +641,7 @@ SIDEBAR
 
 .sidebar .widget-title {
   color: #232323;
+  font-size: 24px;
 }
 
 .sidebar .form-control {
@@ -2620,7 +2621,7 @@ FOOTER
 }
 
 .footer.primary-footer {
-  background-color: #0b509e;
+  background-color: #212121;
   padding-bottom: 40px;
   padding-top: 53px;
 }
@@ -3125,11 +3126,11 @@ mark,
   color: #ffffff;
   background: #3ac5c8;
   /* Old browsers */
-  background: -moz-linear-gradient(45deg, #3a4dc8 1%, #0b509e 100%);
+  background: -moz-linear-gradient(45deg, #202020 1%, #2e2e2e 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #3a4dc8 1%, #0b509e 100%);
+  background: -webkit-linear-gradient(45deg, #2b2b2b 1%, #252525 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #3a4dc8 1%, #0b509e 100%);
+  background: linear-gradient(45deg, #131313 1%, #373737 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3a4dc8', endColorstr='#0b509e', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
