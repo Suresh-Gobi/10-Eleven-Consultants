@@ -229,7 +229,7 @@
                              </li>
                           </ul>
                        </li>
-                       <li class="active"><a href="page-contact.html">Contact</a></li>
+                       <li><a href="page-contact.html">Contact</a></li>
                        <li class="lastlink hidden-xs hidden-sm">
 
                        </li>
@@ -248,22 +248,7 @@
      </header>
       <!-- end header -->
 
-      <section class="section transheader bgcolor">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
-              <h2>Contact Us</h2>
-              <p class="lead">
-                We are here to assist you with all your business needs. Whether you have inquiries about our services, need expert advice, or require support, our team is ready to help. Get in touch with us through any of the channels below, and we’ll ensure a prompt response.
-              </p>
-            </div>
-            <!-- end col -->
-          </div>
-          <!-- end row -->
-        </div>
-        <!-- end container -->
-      </section>
-      <!-- end section -->
+      
 
       <section class="section">
         <div class="container">
@@ -294,7 +279,9 @@
             </div>
 
             <div class="col-md-6">
+              
               <form role="form" class="contactform">
+                <div id="step-one">
                 <div class="form-group">
                   <input
                     type="text"
@@ -315,6 +302,11 @@
                     required
                   />
                 </div>
+                <button id="next-btn">Next</button>
+
+                </div>
+
+                <div id="step-two" class="hidden">
                 <div class="form-group">
                   <input
                     type="text"
@@ -345,6 +337,14 @@
                   ></textarea>
                 </div>
                 <button
+                type="submit"
+                
+                name="submit"
+                class="button-28"
+              >
+                Previous
+              </button>
+                <button
                   type="submit"
                   
                   name="submit"
@@ -352,8 +352,12 @@
                 >
                   Submit Form
                 </button>
+                </div>
+
               </form>
               <div id="responseMessage" class="mt-3"></div>
+            </div>
+            
             </div>
             <!-- end col -->
             
@@ -364,8 +368,6 @@
         <!-- end container -->
       </section>
       <!-- end section -->
-
-      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3609.827145535462!2d55.2724800109863!3d25.2090511322021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428853023db3%3A0x6e63a9fe6b2d7cfe!2sAspin%20Commercial%20Tower%20-%20106%20Sheikh%20Zayed%20Rd%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2slk!4v1740421852902!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       
 
@@ -489,37 +491,57 @@
 
     <!-- jQuery Files -->
     <script>
-      document.getElementById("contactForm").addEventListener("submit", async function(event) {
-          event.preventDefault();
-  
-          const formData = {
-              name: document.getElementById("name").value,
-              email: document.getElementById("email").value,
-              phone: document.getElementById("phone").value, // Added phone field
-              subject: document.getElementById("subject").value,
-              message: document.getElementById("message").value
-          };
-  
-          try {
-              const response = await fetch("contact.php", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(formData)
-              });
-  
-              const result = await response.json();
-              document.getElementById("responseMessage").innerHTML = 
-                  `<div class="alert alert-${response.ok ? 'success' : 'danger'}">${result.message}</div>`;
-  
-              if (response.ok) {
-                  document.getElementById("contactForm").reset();
+      document.addEventListener("DOMContentLoaded", function () {
+          const stepOne = document.getElementById("step-one");
+          const stepTwo = document.getElementById("step-two");
+          const nextButton = document.getElementById("next-btn");
+          const prevButton = document.getElementById("prev-btn");
+          const submitButton = document.getElementById("submit-btn");
+
+          nextButton.addEventListener("click", function () {
+              let valid = validateStepOne();
+              if (valid) {
+                  stepOne.classList.add("hidden");
+                  stepTwo.classList.remove("hidden");
               }
-          } catch (error) {
-              document.getElementById("responseMessage").innerHTML = 
-                  `<div class="alert alert-danger">Message failed to send. Please try again.</div>`;
+          });
+
+          prevButton.addEventListener("click", function () {
+              stepTwo.classList.add("hidden");
+              stepOne.classList.remove("hidden");
+          });
+
+          submitButton.addEventListener("click", function () {
+              let valid = validateStepTwo();
+              if (valid) {
+                  alert("Form submitted successfully!");
+              }
+          });
+
+          function validateStepOne() {
+              return validateFields("#step-one");
+          }
+
+          function validateStepTwo() {
+              return validateFields("#step-two");
+          }
+
+          function validateFields(stepId) {
+              let isValid = true;
+              document.querySelectorAll(`${stepId} input`).forEach(field => {
+                  let errorMessage = field.nextElementSibling;
+                  if (field.value.trim() === "") {
+                      errorMessage.style.display = "block";
+                      isValid = false;
+                  } else {
+                      errorMessage.style.display = "none";
+                  }
+              });
+              return isValid;
           }
       });
   </script>
+
   
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
