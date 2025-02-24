@@ -442,7 +442,7 @@ SECTION
 
 .transheader {
   padding-top: 220px;
-  min-height: 500px;
+  min-height:100px;
 }
 
 .homepage.transheader {
