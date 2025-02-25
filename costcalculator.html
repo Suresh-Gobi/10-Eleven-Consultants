@@ -253,7 +253,7 @@
       <section class="section">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="contact-details">
                 <h3 class="big-title">Get In Touch With Us</h3>
                 <p>
@@ -278,83 +278,110 @@
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-7">
               
-              <form role="form" class="contactform">
-                <div id="step-one">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <button id="next-btn">Next</button>
-
-                </div>
-
-                <div id="step-two" class="hidden">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    name="subject"
-                    placeholder="Subject"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    placeholder="Message"
-                    maxlength="140"
-                    rows="7"
-                  ></textarea>
-                </div>
-                <button
-                type="submit"
-                
-                name="submit"
-                class="button-28"
-              >
-                Previous
-              </button>
-                <button
-                  type="submit"
-                  
-                  name="submit"
-                  class="button-28"
-                >
-                  Submit Form
-                </button>
-                </div>
-
-              </form>
+              <div class="form-container">
+                <form id="multiStepForm">
+                    <!-- Step 1 -->
+                    <div class="form-step active">
+                        <h2>Step 1: Business Details</h2>
+        
+                        <div class="form-group">
+                            <div class="input-field">
+                                <label for="businessActivity">Business Activity:</label>
+                                <select id="businessActivity" required>
+                                    <option value="">Select</option>
+                                    <option value="Trading">Trading</option>
+                                    <option value="Consulting">Consulting</option>
+                                    <option value="Manufacturing">Manufacturing</option>
+                                </select>
+                            </div>
+                            
+                            <div class="input-field">
+                                <label for="premises">Premises Type:</label>
+                                <select id="premises" required>
+                                    <option value="">Select</option>
+                                    <option value="Office">Office</option>
+                                    <option value="Warehouse">Warehouse</option>
+                                    <option value="Retail Store">Retail Store</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <div class="input-field">
+                                <label for="owners">Number of Owners:</label>
+                                <input type="number" id="owners" required>
+                            </div>
+                            
+                            <div class="input-field">
+                                <label for="visas">Number of Visas:</label>
+                                <input type="number" id="visas" required>
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <div class="input-field full-width">
+                                <label for="jurisdiction">Jurisdiction:</label>
+                                <select id="jurisdiction" required>
+                                    <option value="">Select</option>
+                                    <option value="Mainland">Mainland</option>
+                                    <option value="Freezone">Freezone</option>
+                                    <option value="Offshore">Offshore</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <button type="button" class="next-step">Next</button>
+                    </div>
+        
+                    <!-- Step 2 -->
+                    <div class="form-step">
+                        <h2>Step 2: Personal Details</h2>
+        
+                        <div class="form-group">
+                            <div class="input-field">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" id="firstName" required>
+                            </div>
+        
+                            <div class="input-field">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="lastName" required>
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <div class="input-field">
+                                <label for="phone">Phone:</label>
+                                <input type="number" id="phone" required>
+                            </div>
+        
+                            <div class="input-field">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <div class="input-field full-width">
+                                <label for="nationality">Nationality:</label>
+                                <select id="nationality" required>
+                                    <option value="">Select</option>
+                                    <option value="UAE">United Arab Emirates</option>
+                                    <option value="India">India</option>
+                                    <option value="USA">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="Germany">Germany</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <button type="button" class="prev-step">Previous</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
               <div id="responseMessage" class="mt-3"></div>
             </div>
             
@@ -492,54 +519,43 @@
     <!-- jQuery Files -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-          const stepOne = document.getElementById("step-one");
-          const stepTwo = document.getElementById("step-two");
-          const nextButton = document.getElementById("next-btn");
-          const prevButton = document.getElementById("prev-btn");
-          const submitButton = document.getElementById("submit-btn");
+    const formSteps = document.querySelectorAll(".form-step");
+    const nextBtns = document.querySelectorAll(".next-step");
+    const prevBtns = document.querySelectorAll(".prev-step");
+    let currentStep = 0;
 
-          nextButton.addEventListener("click", function () {
-              let valid = validateStepOne();
-              if (valid) {
-                  stepOne.classList.add("hidden");
-                  stepTwo.classList.remove("hidden");
-              }
-          });
+    function updateFormSteps() {
+        formSteps.forEach((step, index) => {
+            step.classList.toggle("active", index === currentStep);
+        });
+    }
 
-          prevButton.addEventListener("click", function () {
-              stepTwo.classList.add("hidden");
-              stepOne.classList.remove("hidden");
-          });
+    nextBtns.forEach(button => {
+        button.addEventListener("click", function () {
+            if (currentStep < formSteps.length - 1) {
+                currentStep++;
+                updateFormSteps();
+            }
+        });
+    });
 
-          submitButton.addEventListener("click", function () {
-              let valid = validateStepTwo();
-              if (valid) {
-                  alert("Form submitted successfully!");
-              }
-          });
+    prevBtns.forEach(button => {
+        button.addEventListener("click", function () {
+            if (currentStep > 0) {
+                currentStep--;
+                updateFormSteps();
+            }
+        });
+    });
 
-          function validateStepOne() {
-              return validateFields("#step-one");
-          }
+    document.getElementById("multiStepForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Form submitted successfully!");
+    });
 
-          function validateStepTwo() {
-              return validateFields("#step-two");
-          }
+    updateFormSteps(); // Initialize form steps
+});
 
-          function validateFields(stepId) {
-              let isValid = true;
-              document.querySelectorAll(`${stepId} input`).forEach(field => {
-                  let errorMessage = field.nextElementSibling;
-                  if (field.value.trim() === "") {
-                      errorMessage.style.display = "block";
-                      isValid = false;
-                  } else {
-                      errorMessage.style.display = "none";
-                  }
-              });
-              return isValid;
-          }
-      });
   </script>
 
   
