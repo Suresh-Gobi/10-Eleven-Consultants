@@ -3146,7 +3146,7 @@ mark,
   /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #0b509e 1%, #3a4dc8 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #0b509e 1%, #3a4dc8 100%);
+  background: linear-gradient(45deg, rgb(255, 213, 0) 1%, rgb(255, 213, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b509e', endColorstr='#3a4dc8', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
@@ -3827,9 +3827,7 @@ figcaption {
 }
 
 
-
-
-
+/*cost calculation*/
 .form-container {
   background: white;
   padding: 25px;
@@ -3880,4 +3878,35 @@ input, select {
   flex: 100%;
 }
 
+.phone-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.phone-container select {
+  width: 30%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background: white;
+}
+
+.phone-container input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background: white;
+}
+
+.phone-container select:focus,
+.phone-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/*cost calculation end*/
