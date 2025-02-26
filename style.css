@@ -1174,20 +1174,21 @@ MODULEs
 }
 
 .back1 {
-  background: rgba(0, 0, 0, 0) url("upload/bg_02.jpg") repeat fixed top center !important;
+  background: rgba(0, 0, 0, 0) url("upload/team-about.jpg") repeat fixed top center !important;
 }
 
 .back2 {
-  background: rgba(0, 0, 0, 0) url("upload/bg_02.jpg") repeat fixed top center !important;
+  background: rgba(0, 0, 0, 0) url("upload/team-about.jpg") repeat fixed top center !important;
 }
 
 .back3 {
-  background: rgba(0, 0, 0, 0) url("upload/bg_02.jpg") repeat fixed top center !important;
+  background: rgba(0, 0, 0, 0) url("upload/team-about.jpg") repeat fixed top center !important;
 }
 
 .milestone-counter {
   padding: 10px;
   margin: 0 0 5px;
+  margin-top: 20px;
 }
 
 .milestones hr {
