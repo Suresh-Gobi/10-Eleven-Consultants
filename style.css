@@ -3812,3 +3812,47 @@ input, select {
 }
 
 /*cost calculation end*/
+
+/*logo slider*/
+.logo-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200%;
+  animation: scrollLogos 20s linear infinite;
+}
+
+.client-box {
+  flex: 0 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.client-box img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain; 
+}
+
+
+@keyframes scrollLogos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/*logo slider*/
