@@ -3369,7 +3369,7 @@ RESPONSIVE
     height: 300px; /* Adjust as needed */
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -3385,6 +3385,21 @@ RESPONSIVE
     transform: scale(1.05); /* Slightly enlarges card */
 }
 
+ @media (max-width: 768px) {
+        .jurisdiction-card {
+            min-height: auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .jurisdiction-card h3 {
+            font-size: 24px;
+        }
+
+        .jurisdiction-card ul li {
+            font-size: 14px;
+        }
+    }
 
 .jurisdiction-card h3,
 .jurisdiction-card p {
@@ -3873,3 +3888,14 @@ input, select {
   }
 }
 /*logo slider*/
+
+/*footer mobile responsive*/
+@media (max-width: 768px) {
+  .footer-info-single {
+      text-align: center;
+  }
+  .social-media ul {
+      text-align: center;
+  }
+}
+/*footer mobile responsive*/
