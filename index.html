@@ -28,16 +28,13 @@
             rel="stylesheet"
             />
          <!-- Custom & Default Styles -->
-         
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
          <link rel="stylesheet" href="css/font-awesome.min.css" />
          <link rel="stylesheet" href="css/bootstrap.min.css" />
          <link rel="stylesheet" href="css/animate.css" />
          <link rel="stylesheet" href="css/carousel.css" />
          <link rel="stylesheet" href="style.css" />
-
-         
          <!--[if lt IE 9]>
-         
          <script src="js/vendor/html5shiv.min.js"></script>
          <script src="js/vendor/respond.min.js"></script>
          <![endif]-->
@@ -104,7 +101,6 @@
                               <li class="hidden-xs">
                                  <i class="fa fa-clock-o"></i>Mon - Fri 09:00 am to 06:00 pm UAE (GMT+4)
                               </li>
-                              
                               <li><i class="fa fa-phone"></i> +971 58 546 6786 </li>
                            </ul>
                            <!-- end list -->
@@ -143,7 +139,7 @@
                         <div id="navbar" class="navbar-collapse collapse">
                            <ul class="nav navbar-nav navbar-right">
                               <li class="active"><a href="index.html">Home</a></li>
-                              <li><a href="case-studies.html">About Us</a></li>
+                              <li><a href="about.html">About Us</a></li>
                               <li class="dropdown yamm-fw hasmenu">
                                  <a
                                     href="#"
@@ -161,17 +157,22 @@
                                              <div class="col-md-4">
                                                 <ul>
                                                    <li>
-                                                      <a href="service-01.html"
+                                                      <a href="companyformation.html"
+                                                         >Company Formation</a
+                                                         >
+                                                   </li>
+                                                   <li>
+                                                      <a href="companyformation.html"
                                                          >Mainland Company Setup</a
                                                          >
                                                    </li>
                                                    <li>
-                                                      <a href="service-02.html"
+                                                      <a href="companyformation.html"
                                                          >Freezone Company Setup</a
                                                          >
                                                    </li>
                                                    <li>
-                                                      <a href="service-03.html"
+                                                      <a href="companyformation.html"
                                                          >Offshore Company Setup</a
                                                          >
                                                    </li>
@@ -199,27 +200,32 @@
                                              <div class="col-md-4">
                                                 <ul>
                                                    <li>
-                                                      <a href="service-01.html"
+                                                      <a href="services.html"
+                                                         >Services</a
+                                                         >
+                                                   </li>
+                                                   <li>
+                                                      <a href="services.html"
                                                          >PRO Services (DED, Immigration & Labor)</a
                                                          >
                                                    </li>
                                                    <li>
-                                                      <a href="service-02.html"
+                                                      <a href="services.html"
                                                          >Accounting & Tax Consultancy</a
                                                          >
                                                    </li>
                                                    <li>
-                                                      <a href="service-03.html"
+                                                      <a href="services.html"
                                                          >Bank Account Opening</a
                                                          >
                                                    </li>
                                                    <li>
-                                                      <a href="service-03.html"
+                                                      <a href="services.html"
                                                          >Trademark Registration</a
                                                          >
                                                    </li>
                                                    <li>
-                                                      <a href="service-03.html"
+                                                      <a href="services.html"
                                                          >Legal Consultancy
                                                       </a>
                                                    </li>
@@ -230,13 +236,11 @@
                                     </li>
                                  </ul>
                               </li>
-                              <li><a href="page-contact.html">Contact</a></li>
+                              <li><a href="contact.html">Contact</a></li>
                               <li class="lastlink hidden-xs hidden-sm">
- 
                               </li>
-
-                              <a href="page-contact.html" class="btn button-28">Cost
-                                Calculator</a>
+                              <a href="costcalculator.html" class="btn button-28">Cost
+                              Calculator</a>
                            </ul>
                         </div>
                         <!--/.nav-collapse -->
@@ -259,10 +263,20 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-10 col-md-offset-1 col-sm-12 text-left">
-                        <h3 style="color: white;">Your Trusted Business Partner in Dubai</h3>
+                        <h3 style="
+                           background-color: #F8F6F4;
+                           color: #181818;
+                           display: inline-block;
+                           padding: 8px 15px;
+                           border-radius: 8px; 
+                           font-weight: bold;
+                           font-size: 28px;
+                           ">
+                           #Your Trusted Business Partner in Dubai
+                        </h3>
                         <h2 style="font-size: 75px;">Start Your Business in the <span style="color: rgb(255, 213, 0);">UAE</span> with Ease</h2>
-<br/>
-                        <a href="page-contact.html" class="btn button-29">Let's Talk <i class="fa fa-phone"></i></a>
+                        <br/>
+                        <a class="btn button-29" data-toggle="modal" data-target="#myModal">Let's Talk <i class="fa fa-phone"></i></a>
                      </div>
                      <!-- end col -->
                   </div>
@@ -270,149 +284,155 @@
                </div>
                <!-- end container -->
             </section>
+            <div id="myModal" class="modal fade" role="dialog">
+               <div class="modal-dialog">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                     <div class="modal-header">
+                     </div>
+                     <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title text-center">Get a Call from Us</h2>
+                        <hr/>
+                        <form role="form" class="contactform" >
+                           <div class="form-group">
+                              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                           </div>
+                           <div class="form-group">
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                           </div>
+                           <div class="form-group">
+                              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                           </div>
+                           <div class="form-group">
+                              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                           </div>
+                           <div class="form-group">
+                              <textarea class="form-control" id="message" name="message" placeholder="Message" maxlength="140" rows="4"></textarea>
+                           </div>
+                           <button type="submit" class="btn btn-primary btn-block">
+                           Submit Form
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
             <!-- end section -->
-
             <section class="section ldp">
-               <div class="container">
-                  <div class="row text-center">
-                     <div class="col-md-2 col-sm-2 col-xs-6">
-                        <div class="client-box">
-                           <a href="#"
-                              ><img
-                              src="upload/client_01.png"
-                              alt=""
-                              class="img-responsive"
-                              /></a>
-                        </div>
+               <div class="logo-slider">
+                  <div class="logo-track">
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/01.png" alt="" /></a>
                      </div>
-                     <!-- end col -->
-                     <div class="col-md-2 col-sm-2 col-xs-6">
-                        <div class="client-box">
-                           <a href="#"
-                              ><img
-                              src="upload/client_02.png"
-                              alt=""
-                              class="img-responsive"
-                              /></a>
-                        </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/02.png" alt="" /></a>
                      </div>
-                     <!-- end col -->
-                     <div class="col-md-2 col-sm-2 col-xs-6">
-                        <div class="client-box">
-                           <a href="#"
-                              ><img
-                              src="upload/client_03.png"
-                              alt=""
-                              class="img-responsive"
-                              /></a>
-                        </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/03.png" alt="" /></a>
                      </div>
-                     <!-- end col -->
-                     <div class="col-md-2 col-sm-2 col-xs-6">
-                        <div class="client-box">
-                           <a href="#"
-                              ><img
-                              src="upload/client_04.png"
-                              alt=""
-                              class="img-responsive"
-                              /></a>
-                        </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/04.png" alt="" /></a>
                      </div>
-                     <!-- end col -->
-                     <div class="col-md-2 col-sm-2 col-xs-6">
-                        <div class="client-box">
-                           <a href="#"
-                              ><img
-                              src="upload/client_05.png"
-                              alt=""
-                              class="img-responsive"
-                              /></a>
-                        </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/05.png" alt="" /></a>
                      </div>
-                     <!-- end col -->
-                     <div class="col-md-2 col-sm-2 col-xs-6">
-                        <div class="client-box">
-                           <a href="#"
-                              ><img
-                              src="upload/client_06.png"
-                              alt=""
-                              class="img-responsive"
-                              /></a>
-                        </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/06.png" alt="" /></a>
                      </div>
-                     <!-- end col -->
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/07.png" alt="" /></a>
+                     </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/08.png" alt="" /></a>
+                     </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/09.png" alt="" /></a>
+                     </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/10.png" alt="" /></a>
+                     </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/11.png" alt="" /></a>
+                     </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/12.png" alt="" /></a>
+                     </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/13.png" alt="" /></a>
+                     </div>
+                     <div class="client-box">
+                        <a href="#"><img src="./logos/14.png" alt="" /></a>
+                     </div>
                   </div>
-                  <!-- end row -->
                </div>
-               <!-- end container -->
             </section>
             <!-- end section -->
-
-        
             <section class="section bt">
                <div class="container">
-                  <div class="section-title text-center">
-                     
-                     <h4 style="color: rgb(42, 42, 42)">Choose Your Jurisdiction</h4>
-                     <h2 class="big-title">
-                        <span class="black-text">Business Setup in Dubai</span> 
-                     </h2>
-                     <br/>
-                  </div>
-                  <!-- end section-title -->
-                  <div class="col-md-4">
-                     <div class="jurisdiction-card" style="background: linear-gradient(rgba(0, 0, 0, 0.252), rgb(0, 0, 0)), url('upload/mainland.jpeg') center/cover no-repeat;">
-                        <h3 class="title text-center" style="font-size: 34px;">Mainland</h3>
-                        <div class="details">
-                           <ul>
-                              <li>No local UAE sponsor fees</li>
-                              <li>Understand your corporate tax obligations</li>
-                              <li>Complimentary P.O. Box number in Dubai</li>
-                              <li>Access to over 1,000 professional activities to choose from</li>
-                           </ul>
-                        </div>
-                        
-                     </div>
-                  </div>
-                  <!-- end col -->
-                  <!-- Card 3: Offshore -->
-                  <div class="col-md-4">
-                     <div class="jurisdiction-card" style="background: linear-gradient(rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.931)), url('upload/freezone.jpg') center/cover no-repeat;">
-                        <h3 class="title text-center" style="font-size: 34px;">Free Zone</h3>
-                        <div class="details">
-                           <ul>
-                              <li>100% foreign ownership in Freezone companies without needing a local sponsor</li>
-                              <li>Multiple shareholders</li>
-                              <li>Tax exemptions and incentives.</li>
-                              <li>Dedicated relationship manager</li>
-                           </ul>
-                        </div>
-                        
-                     </div>
-                  </div>
-                  <!-- end col -->
-                  <!-- Card 2: Free Zone -->
-                  <div class="col-md-4">
-                     <div class="jurisdiction-card" style="background: linear-gradient(rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.931)), url('images/Offshore.jpg') center/cover no-repeat;">
-                        <h3 class="title text-center" style="font-size: 34px;">Offshore</h3>
-                        <div class="details">
-                           <ul>
-                              <li>100% Foreign Ownership</li>
-                              <li>100% Import and Export Tax Exemption</li>
-                              <li>100% Repatriation of Capital and Profit</li>
-                              <li>Abundant and Inexpensive Energy</li>
-                              <li>Personal Income Tax Exemption</li>
-                           </ul>
-                        </div>
-                        
-                     </div>
-                  </div>
-                  <!-- end col -->
+                   <div class="section-title text-center">
+                       <h4 style="color: rgb(42, 42, 42)">Choose Your Jurisdiction</h4>
+                       <h2 class="big-title">
+                           <span class="black-text">Business Setup in Dubai</span> 
+                       </h2>
+                       <br/>
+                   </div>
+                   <!-- end section-title -->
+           
+                   <div class="row">
+                       <!-- Mainland -->
+                       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                           <div class="jurisdiction-card" 
+                                style="background: linear-gradient(rgba(0, 0, 0, 0.252), rgb(0, 0, 0)), 
+                                       url('upload/mainland.jpeg') center/cover no-repeat;">
+                               <h3 class="title text-center">Mainland</h3>
+                               <div class="details">
+                                   <ul>
+                                       <li>No local UAE sponsor fees</li>
+                                       <li>Understand your corporate tax obligations</li>
+                                       <li>Complimentary P.O. Box number in Dubai</li>
+                                       <li>Access to over 1,000 professional activities to choose from</li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Free Zone -->
+                       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                           <div class="jurisdiction-card" 
+                                style="background: linear-gradient(rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.931)), 
+                                       url('upload/freezone.jpg') center/cover no-repeat;">
+                               <h3 class="title text-center">Free Zone</h3>
+                               <div class="details">
+                                   <ul>
+                                       <li>100% foreign ownership in Freezone companies</li>
+                                       <li>Multiple shareholders</li>
+                                       <li>Tax exemptions and incentives</li>
+                                       <li>Dedicated relationship manager</li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Offshore -->
+                       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                           <div class="jurisdiction-card" 
+                                style="background: linear-gradient(rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.931)), 
+                                       url('images/Offshore.jpg') center/cover no-repeat;">
+                               <h3 class="title text-center">Offshore</h3>
+                               <div class="details">
+                                   <ul>
+                                       <li>100% Foreign Ownership</li>
+                                       <li>100% Import and Export Tax Exemption</li>
+                                       <li>100% Repatriation of Capital and Profit</li>
+                                       <li>Abundant and Inexpensive Energy</li>
+                                       <li>Personal Income Tax Exemption</li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- end row -->
                </div>
-         </div>
-         </section>
-
-         
+           </section>
          <section class="services">
             <div class="container">
                <p>Our Services</p>
@@ -426,109 +446,98 @@
                   with our comprehensive VAT-compliant services!
                </p>
                <br/>
-                 <div class="service-grid">
+               <div class="service-grid">
                   <div class="service-card">
-                   <img src="images/PRO Services.png" alt="Business Setup">
-                   <h3>PRO Services (DED, Immigration & Labor)</h3>
-                   <p>
-                    Simplify business setup with our expert PRO services.
-                   </p>
-                  </div>
-                  <div class="service-card">
-                   <img src="images/Accounting.png" alt="Accounting">
-                   <h3>Accounting & Tax Consultancy</h3>
-                   <p>
-                    Professional accounting and tax advice.
-                   </p>
+                     <img src="images/PRO Services.png" alt="Business Setup">
+                     <h3>PRO Services (DED, Immigration & Labor)</h3>
+                     <p>
+                        Simplify business setup with our expert PRO services.
+                     </p>
                   </div>
                   <div class="service-card">
-                   <img src="images/Bank Account Opening.png" alt="Audit">
-                   <h3>Bank Account Opening</h3>
-                   <p>
-                    Hassle-free bank account opening services.
-                   </p>
+                     <img src="images/Accounting.png" alt="Accounting">
+                     <h3>Accounting & Tax Consultancy</h3>
+                     <p>
+                        Professional accounting and tax advice.
+                     </p>
                   </div>
                   <div class="service-card">
-                   <img src="images/Trademark Registration.png" alt="Legal">
-                   <h3>Trademark Registration</h3>
-                   <p>
-                    Secure your brand with trademark registration.
-                   </p>
+                     <img src="images/Bank Account Opening.png" alt="Audit">
+                     <h3>Bank Account Opening</h3>
+                     <p>
+                        Hassle-free bank account opening services.
+                     </p>
                   </div>
                   <div class="service-card">
-                   <img src="images/Legal Consultancy.png" alt="ICV Certification">
-                   <h3>Legal Consultancy</h3>
-                   <p>
-                    Expert legal advice for your business.
-                   </p>
+                     <img src="images/Trademark Registration.png" alt="Legal">
+                     <h3>Trademark Registration</h3>
+                     <p>
+                        Secure your brand with trademark registration.
+                     </p>
                   </div>
                   <div class="service-card">
-                   <img src="images/Liquidation.png" alt="Liquidation">
-                   <h3>Liquidation</h3>
-                   <p>
-                    Efficient liquidation services for your business.
-                   </p>
+                     <img src="images/Legal Consultancy.png" alt="ICV Certification">
+                     <h3>Legal Consultancy</h3>
+                     <p>
+                        Expert legal advice for your business.
+                     </p>
                   </div>
-                 </div>
-            </div>
-         </section>
-
-
-          <section class="section overfree" style="width: 100%;">
-            <div class="container">
-               <div class="row">
-                 <div class="col-md-7 col-sm-12">
-                  <div class="about-widget">
-                    <h3>Why Choose <strong>SEO Time</strong></h3>
-        
-                    <p class="lead">
-                     Nullam feugiat sapien et libero elementum faucibus. Praesent
-                     sagittis venenatis ipsum, eget tristique odio pharetra quis.
-                    </p>
-        
-                    <p>
-                     Morbi quis porta dolor. Nullam feugiat sapien et libero
-                     elementum faucibus. Praesent sagittis venenatis ipsum, eget
-                     tristique odio pharetra quis. Sed maximus a eros quis ornare.
-                     Proin tempor dolor a auctor convallis. Nam accumsan commodo
-                     elit..
-                    </p>
-        
-                    <p>
-                     Phasellus consequat egestas tempor. Fusce faucibus et ligula
-                     consequat imperdiet vel non ligula. Aliquam lorem leo, dapibus
-                     eu cras amet.
-                    </p>
+                  <div class="service-card">
+                     <img src="images/Liquidation.png" alt="Liquidation">
+                     <h3>Liquidation</h3>
+                     <p>
+                        Efficient liquidation services for your business.
+                     </p>
                   </div>
-                 </div>
-                 <!-- end col -->
-        
-                 <div class="col-md-5 col-sm-12">
-                  <div class="milestone-counter parallax back1">
-                    <img src="images/icon_07.png" alt="" class="alignleft" />
-                    <h3 class="stat-count">2901</h3>
-                    <p>Happy Customers</p>
-                  </div>
-        
-                  <div class="milestone-counter parallax back2">
-                    <img src="images/icon_08.png" alt="" class="alignleft" />
-                    <h3 class="stat-count">304</h3>
-                    <p>Online Strategy</p>
-                  </div>
-        
-                  <div class="milestone-counter parallax back3">
-                    <img src="images/icon_09.png" alt="" class="alignleft" />
-                    <h3 class="stat-count">890</h3>
-                    <p>Great Results</p>
-                  </div>
-                 </div>
                </div>
             </div>
-          </section>
+         </section>
+         <section class="section overfree" style="width: 100%;">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-7 col-sm-12">
+                     <div class="about-widget">
+                        <h2 class="big-title">Why Choose 10 Elevent Consultant?</h2>
+                        <p class="lead">
+                           <b>Empowering businesses with expert consultancy, strategic insights, and tailored solutions for sustainable success.</b>
+                        </p>
+                        <p>
+                           At <strong>10 Elevent Consultant</strong>, we bring years of expertise in business consulting, helping entrepreneurs and organizations establish, scale, and thrive in a competitive market. Our data-driven approach, industry knowledge, and commitment to excellence set us apart.
+                        </p>
+                        <p>
+                           Whether you are launching a new business, expanding into new markets, or optimizing your current operations, our team provides comprehensive guidance and practical strategies tailored to your goals.
+                        </p>
+                        <p>
+                           Partner with us and experience seamless business growth, regulatory compliance, and long-term success.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- end col -->
+                  <div class="col-md-5 col-sm-12">
+                     <div class="milestone-counter parallax back1">
+                        <img src="images/icon_07.png" alt="" class="alignleft" />
+                        <br/>
+                        <h3>Happy Clients</h3>
+                        <br/>
+                     </div>
+                     <div class="milestone-counter parallax back2">
+                        <img src="images/icon_08.png" alt="" class="alignleft" />
+                        <br/>
+                        <h3>Successful Strategies</h3>
+                        <br/>
+                     </div>
+                     <div class="milestone-counter parallax back3">
+                        <img src="images/icon_09.png" alt="" class="alignleft" />
+                        <p></p>
+                        <br/>
+                        <h3>Proven Business Results</h3>
+                        <br/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
          <!-- end section -->
-
-
-
          <!-- FAQ 1 - Bootstrap Brain Component -->
          <section class="" style="background-color:white; padding: 30px 0;">
             <div class="container">
@@ -537,239 +546,193 @@
                      <img class="img-responsive img-rounded" src="./images/Untitled-1.png" alt="How can we help you?">
                   </div>
                   <div class="col-md-6">
-                     <h2 class="h1">How can we help you?</h2>
-                     <p class="lead text-muted">We hope you have found an answer to your question. If you need any help, please search your query on our Support Center or contact us via email.</p>
-                     
+                     <h2 class="big-title">How can we help you?</h2>
+                     <p class="lead text-muted">We hope you have found an answer to your question. If you need any help, please search your query on our contact us via email.</p>
                      <div class="panel-group" id="faqAccordion">
                         <!-- FAQ 1 -->
                         <div class="panel panel-default">
                            <div class="panel-heading">
                               <h4 class="panel-title">
                                  <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1" style="font-size: 20px;">
-                                    How Do I Change My Billing Information?
+                                 What are the benefits of setting up a Free Zone company?
                                  </a>
                               </h4>
                            </div>
                            <div id="faq1" class="panel-collapse collapse in">
                               <div class="panel-body">
-                                 <p>To change your billing information, please follow these steps:</p>
-                                 <ul>
-                                    <li>Go to our website and sign in to your account.</li>
-                                    <li>Click on your profile picture in the top right corner of the page and select "Account Settings."</li>
-                                    <li>Under the "Billing Information" section, click on "Edit."</li>
-                                    <li>Make your changes and click on "Save."</li>
-                                 </ul>
+                                 <p>Free Zones offer 100% foreign ownership, tax exemptions, and streamlined processes for international businesses. Some zones are industry-specific, which can provide additional benefits tailored to your business activity.</p>
                               </div>
                            </div>
                         </div>
-
                         <!-- FAQ 2 -->
                         <div class="panel panel-default">
                            <div class="panel-heading">
                               <h4 class="panel-title">
                                  <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2" class="collapsed" style="font-size: 20px;">
-                                    How Does Payment System Work?
+                                 Can a Free Zone company trade directly with UAE customers?
                                  </a>
                               </h4>
                            </div>
                            <div id="faq2" class="panel-collapse collapse">
                               <div class="panel-body">
-                                 A payment system is a way to transfer money from one person or organization to another. It is a complex process that involves many different parties, including banks, credit card companies, and merchants.
+                                 Yes, free zone companies can trade directly with UAE residents and businesses without restrictions, providing greater market access.
                               </div>
                            </div>
                         </div>
-
-                        <!-- FAQ 3 -->
+                        <!-- FAQ 4 -->
                         <div class="panel panel-default">
                            <div class="panel-heading">
                               <h4 class="panel-title">
-                                 <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq3" class="collapsed" style="font-size: 20px;">
-                                    How Do I Cancel My Account?
+                                 <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq4" class="collapsed" style="font-size: 20px;">
+                                 How long does it take to set up a company in the UAE?
                                  </a>
                               </h4>
                            </div>
-                           <div id="faq3" class="panel-collapse collapse">
+                           <div id="faq4" class="panel-collapse collapse">
                               <div class="panel-body">
-                                 <p>To cancel your account, please follow these steps:</p>
-                                 <ul>
-                                    <li>Go to our website and sign in to your account.</li>
-                                    <li>Click on your profile picture in the top right corner of the page and select "Account Settings."</li>
-                                    <li>Scroll to the bottom of the page and click on "Cancel Account."</li>
-                                    <li>Enter your password and click on "Cancel Account."</li>
-                                 </ul>
+                                 <p>The timeline varies based on the jurisdiction you choose. Free Zone setups or Mainland companies for specific activities can take as little as 3–5 working days.</p>
                               </div>
                            </div>
                         </div>
-                     </div> <!-- /panel-group -->
-
+                     </div>
+                     <!-- FAQ 5 -->
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq5" class="collapsed" style="font-size: 20px;">
+                              What documents are required for company formation?
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="faq5" class="panel-collapse collapse">
+                           <div class="panel-body">
+                              <p>Common requirements include passport copies of shareholders, proof of address, business plan, and initial approval from relevant authorities. We guide you through the full list based on your specific setup.</p>
+                           </div>
+                        </div>
+                     </div>
                   </div>
+                  <!-- /panel-group -->
                </div>
+            </div>
             </div>
          </section>
-         
          <section class="section">
             <div class="container">
-              <div class="row contactv2 text-center">
-                <div class="col-md-4">
-                  <div class="small-box">
-                    <i class="flaticon-message"></i>
-                    <h4>Contact us today</h4>
-                    <small>Phone: +90 987 665 55 44</small>
-                    <small>Fax: +90 987 665 55 45</small>
-                    <p><a href="mail:to">info@yoursite.com</a></p>
+               <div class="row contactv2 text-center">
+                  <div class="col-md-4">
+                     <div class="small-box">
+                        <i class="flaticon-message"></i>
+                        <h4>Contact us today</h4>
+                        <small>Call: +971 58 546 6786</small>
+                        <small>Whats App: +971 58 546 6786</small>
+                        <p><a href="mail:to">info@10eleven.ae</a></p>
+                     </div>
+                     <!-- end small-box -->
                   </div>
-                  <!-- end small-box -->
-                </div>
-                <!-- end col -->
-    
-                <div class="col-md-4">
-                  <div class="small-box">
-                    <i class="flaticon-home-marker"></i>
-                    <h4>Visit Our Office</h4>
-                    <small>PO Box 16122 Collins Street West</small>
-                    <small>Victoria 8007 Australia</small>
-                    <p><a href="#">View on Google Map</a></p>
+                  <!-- end col -->
+                  <div class="col-md-4">
+                     <div class="small-box">
+                        <i class="flaticon-home-marker"></i>
+                        <h4>Visit Our Office</h4>
+                        <small>Aspin Commercial Tower, 10th floor,
+                        </small>
+                        <small>Sheikh Zayed Road, Dubai</small>
+                        <p><a href="#">View on Google Map</a></p>
+                     </div>
+                     <!-- end small-box -->
                   </div>
-                  <!-- end small-box -->
-                </div>
-                <!-- end col -->
-    
-                <div class="col-md-4">
-                  <div class="small-box">
-                    <i class="flaticon-user"></i>
-                    <h4>Be Social</h4>
-                    <small>Twitter: @yourhandle</small>
-                    <small>Facebook: facebook.com/yourhandle</small>
-                    <p><a href="#">Email Newsletter</a></p>
+                  <!-- end col -->
+                  <div class="col-md-4">
+                     <div class="small-box">
+                        <i class="flaticon-user"></i>
+                        <h4>Be Social</h4>
+                        <small>Twitter: </small>
+                        <small>Facebook: </small>
+                        <p><a href="#">Email Newsletter</a></p>
+                     </div>
+                     <!-- end small-box -->
                   </div>
-                  <!-- end small-box -->
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end contactv2 -->
-
-              <!-- end row -->
+                  <!-- end col -->
+               </div>
+               <!-- end contactv2 -->
+               <!-- end row -->
             </div>
             <!-- end container -->
-          </section>
-          <!-- end section -->
-    
-          
-
-         
-         <footer class="footer primary-footer">
+         </section>
+         <!-- end section -->
+         <footer class="nb-footer">
             <div class="container">
-               <div class="row">
-                  <div class="col-md-4 col-sm-4">
-                     <div class="widget clearfix">
-                        <h4 class="widget-title" style="font-size: 20px;">Subscribe</h4>
-                        <div class="newsletter-widget">
-                           <p>
-                              You can opt out of our newsletters at any time. See our
-                              privacy policy.
-                           </p>
-                           <form class="form-inline" role="search">
-                              <div class="form-1">
-                                 <input
-                                    type="text"
-                                    class="form-control"
-                                    placeholder="Enter email here.."
-                                    />
-                                 <button type="submit" class="btn btn-primary">
-                                 <i class="fa fa-envelope-o"></i>
-                                 </button>
-                              </div>
-                           </form>
+                <div class="row">
+                    <div class="col-12 text-center mb-3">
+                        <div class="about">
+                            <div class="social-media">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <!-- end newsletter -->
-                     </div>
-                     <!-- end widget -->
-                  </div>
-                  <!-- end col -->
-                  <div class="col-md-2 col-sm-2">
-                     <div class="widget clearfix">
-                        <h4 class="widget-title" style="font-size: 20px;">Quick Links</h4>
-                        <ul>
-                           <li><a href="#">About us</a></li>
-                           <li><a href="#">Company Formation</a></li>
-                           <li><a href="#">Contact</a></li>
-                        </ul>
-                     </div>
-                     <!-- end widget -->
-                  </div>
-                  <!-- end col -->
-                  <div class="col-md-2 col-sm-2">
-                     <div class="widget clearfix">
-                        <h4 class="widget-title" style="font-size: 20px;">Services</h4>
-                        <ul>
-                           <li><a href="#">PRO Services (DED, Immigration & Labor)</a></li>
-                           <li><a href="#">Accounting & Tax Consultancy
-                           </a></li>
-                           <li><a href="#">Bank Account Opening
-                           </a></li>
-                           <li><a href="#">Trademark Registration
-                           </a></li>
-                           <li><a href="#">Liquidation
-                           </a></li>
-                        </ul>
-                     </div>
-                     <!-- end widget -->
-                  </div>
-                  <!-- end col -->
-                  <div class="col-md-2 col-sm-2">
-                     <div class="widget clearfix">
-                        <h4 class="widget-title" style="font-size: 20px;">Help</h4>
-                        <ul>
-                           <li><a href="#">Terms & Conditions</a></li>
-                           <li><a href="#">Refund Policy</a></li>
-                           <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                     </div>
-                     <!-- end widget -->
-                  </div>
-                  <!-- end col -->
-                  <div class="col-md-2 col-sm-2">
-                     <div class="widget clearfix">
-                        <h4 class="widget-title" style="font-size: 20px;">Be Social</h4>
-                        <ul>
-                           <li><a href="#">Facebook</a></li>
-                           <li><a href="#">Twitter</a></li>
-                           <li><a href="#">Linkedin</a></li>
-                        </ul>
-                     </div>
-                     <!-- end widget -->
-                  </div>
-                  <!-- end col -->
-               </div>
-               <!-- end row -->
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6 col-12 mb-4">
+                        <div class="footer-info-single">
+                            <h2 class="title">About Company</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4">
+                        <div class="footer-info-single">
+                            <h2 class="title">Quick Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="about.html" title=""><i class="fa fa-angle-double-right"></i> About us</a></li>
+                                <li><a href="companyformation.html" title=""><i class="fa fa-angle-double-right"></i> Company Formation</a></li>
+                                <li><a href="services.html" title=""><i class="fa fa-angle-double-right"></i> Services</a></li>
+                                <li><a href="contact.html" title=""><i class="fa fa-angle-double-right"></i> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4">
+                        <div class="footer-info-single">
+                            <h2 class="title">Our Services</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> PRO Services</a></li>
+                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Accounting & Tax Consultancy</a></li>
+                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Bank Account Opening</a></li>
+                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Trademark Registration</a></li>
+                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Legal Consultancy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4">
+                        <div class="footer-info-single">
+                            <h2 class="title">Security & Privacy</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="terms-&-conditions.html" title=""><i class="fa fa-angle-double-right"></i> Terms & Conditions</a></li>
+                                <li><a href="refund-policy.html" title=""><i class="fa fa-angle-double-right"></i> Refund Policy</a></li>
+                                <li><a href="privacy-policy.html" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- end container -->
-         </footer>
-         <!-- end primary-footer -->
-         <footer class="footer secondary-footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                     <p>
-                        10 Eleven Consultants © 2025. All Rights Reserved.
-                     </p>
-                  </div>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                     <ul class="list-inline">
-                      
-                     </ul>
-                  </div>
-                  <!-- end col -->
-               </div>
-               <!-- end row -->
-            </div>
-            <!-- end container -->
-         </footer>
+            <section class="copyright">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <p>Copyright &copy; 2025. 10 Eleven Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
          <!-- end second footer -->
          </div>
          <!-- end wrapper -->
          <!-- jQuery Files -->
-          <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
          <script src="js/jquery.min.js"></script>
          <script src="js/bootstrap.min.js"></script>
          <script src="js/parallax.js"></script>
