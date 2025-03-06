@@ -171,6 +171,15 @@ h6 {
 TOPBAR
 ************************************/
 
+
+.container-width{
+  align-content: center;
+  align-items: center;
+
+margin-left: 50px;
+margin-right: 50px;
+}
+
 .topbar {
   border-bottom: 1px solid #eee;
   background-color: #fff;
@@ -259,7 +268,7 @@ HEADER
 ************************************/
 
 .site-header {
-  padding: 25px 0 30px;
+  padding: 20px 0 30px;
   background-color: #fff;
   box-sizing: border-box;
   color: #fff;
@@ -283,6 +292,9 @@ HEADER
 
 .navbar-nav > li {
   margin-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1500;
+  font-style: bold;
 }
 
 .yamm .yamm-content ul li a,
@@ -297,6 +309,10 @@ HEADER
   font-weight: bold;
   padding: 17px 0 3px;
   font-weight: 400;
+}
+
+.navbar-nav > li > a:hover {
+  color: rgb(255, 213, 0) !important;
 }
 
 .yamm .yamm-content ul li a {
@@ -413,7 +429,7 @@ HEADER
   right: 0;
   z-index: 1111;
   padding: 20px 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
 }
 
 .header-transparent.affix {
@@ -2934,7 +2950,8 @@ COLORS
 .feature-list hr,
 .navbar-default .navbar-nav > .active > a,
 .form-control:focus {
-  border-color: #1a1a1a;
+  border-color: rgb(255, 213, 0);
+  font-weight: bold;
 }
 
 .NotGeneric-CallToAction,
@@ -3509,7 +3526,7 @@ RESPONSIVE
   color: #191919;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
