@@ -3916,3 +3916,167 @@ input, select {
   }
 }
 /*footer mobile responsive*/
+
+/*Google Translate*/
+
+/* English styles */
+.goog-te-banner-frame.en,
+.goog-te-menu-frame.en {
+  background-color: #f2f2f2;
+}
+/* Sinhala styles */
+.goog-te-banner-frame.si,
+.goog-te-menu-frame.si {
+  background-color: #c7d3a8;
+}
+
+/* Tamil styles */
+.goog-te-banner-frame.ta,
+.goog-te-menu-frame.ta {
+  background-color: #ffdada;
+}
+
+/* French styles */
+.goog-te-banner-frame.fr,
+.goog-te-menu-frame.fr {
+  background-color: #d5c9eb;
+}
+
+/* German styles */
+.goog-te-banner-frame.de,
+.goog-te-menu-frame.de {
+  background-color: #ffe0b2;
+}
+
+/* Indonesian styles */
+.goog-te-banner-frame.id,
+.goog-te-menu-frame.id {
+  background-color: #fff0cc;
+}
+
+/* Thai styles */
+.goog-te-banner-frame.th,
+.goog-te-menu-frame.th {
+  background-color: #b3d9b3;
+}
+
+/* Hindi styles */
+.goog-te-banner-frame.hi,
+.goog-te-menu-frame.hi {
+  background-color: #ffd1b3;
+}
+
+/* Japanese styles */
+.goog-te-banner-frame.ja,
+.goog-te-menu-frame.ja {
+  background-color: #b3c6ff;
+}
+
+.country-translate {
+  width: 25px;
+}
+
+.ct-topbar {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .ct-content {
+    z-index: 1000;
+  }
+  .google-translator-text {
+    display: none;
+  }
+}
+
+.ct-topbar__list {
+  margin-bottom: 0px;
+}
+.ct-language__dropdown {
+  padding-top: 8px;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 110%;
+  left: -3px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 100px;
+  text-align: center;
+  padding-top: 0;
+  z-index: 200;
+  width: 150px;
+}
+
+.VIpgJd-ZVi9od-ORHb {
+  display: none;
+}
+.ct-language__dropdown li {
+  background: #222;
+  text-align: left;
+  padding: 5px;
+}
+.ct-language__dropdown li a {
+  display: flex;
+  align-items: center;
+}
+.ct-language__dropdown li a img {
+  margin-right: 5px;
+}
+.ct-language__dropdown li:first-child {
+  padding-top: 10px;
+  border-radius: 3px 3px 0 0;
+}
+.ct-language__dropdown li:last-child {
+  padding-bottom: 10px;
+  border-radius: 0 0 3px 3px;
+}
+.ct-language__dropdown li:hover {
+  background: #ffffff;
+}
+.ct-language__dropdown:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 8px;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 8px;
+  border-left-width: 8px;
+  border-bottom: 8px solid #222;
+}
+.ct-language {
+  position: relative;
+
+  color: #dfdfdf;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+}
+.ct-language:hover .ct-language__dropdown {
+  max-height: 400px;
+  padding-top: 8px;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.ct-topbar {
+  height: 35px;
+}
+
+.ct-language {
+  width: 30%;
+  font-size: 14px;
+}
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/*Google Translate End*/
