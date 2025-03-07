@@ -29,15 +29,14 @@
             />
          <!-- Custom & Default Styles -->
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
          <link rel="stylesheet" href="css/font-awesome.min.css" />
          <link rel="stylesheet" href="css/bootstrap.min.css" />
          <link rel="stylesheet" href="css/animate.css" />
          <link rel="stylesheet" href="css/carousel.css" />
          <link rel="stylesheet" href="style.css" />
-
-
-         <!-- <script src="js/jquery.js"></script> -->
          
+
       </head>
       <body>
          <div id="wrapper">
@@ -329,7 +328,7 @@
                >
                <div class="container">
                   <div class="row">
-                     <div class="col-md-10 col-md-offset-1 col-sm-12 text-left">
+                     <div class="col-md-10 col-md-offset-1 col-sm-12 text-left" data-aos="fade-up" ata-aos-delay="3000">
                         <h3 style="
                            background-color: #F8F6F4;
                            color: #181818;
@@ -338,7 +337,8 @@
                            border-radius: 8px; 
                            font-weight: bold;
                            font-size: 28px;
-                           ">
+                           "
+                           >
                            #Your Trusted Business Partner in Dubai
                         </h3>
                         <h2 style="font-size: 75px;">Start Your Business in the <span style="color: rgb(255, 213, 0);">UAE</span> with Ease</h2>
@@ -351,40 +351,55 @@
                </div>
                <!-- end container -->
             </section>
-            <div id="myModal" class="modal fade" role="dialog">
-               <div class="modal-dialog">
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                     <div class="modal-header">
-                     </div>
-                     <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h2 class="modal-title text-center">Get a Call from Us</h2>
-                        <hr/>
-                        <form role="form" class="contactform" >
-                           <div class="form-group">
-                              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                           </div>
-                           <div class="form-group">
-                              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                           </div>
-                           <div class="form-group">
-                              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
-                           </div>
-                           <div class="form-group">
-                              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                           </div>
-                           <div class="form-group">
-                              <textarea class="form-control" id="message" name="message" placeholder="Message" maxlength="140" rows="4"></textarea>
-                           </div>
-                           <button type="submit" class="btn btn-primary btn-block">
-                           Submit Form
-                           </button>
-                        </form>
-                     </div>
-                  </div>
-               </div>
+
+            <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+   <div class="modal-dialog modal-xl">
+      <!-- Modal content -->
+      <div class="modal-content custom-modal">
+
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <div class="modal-body text-center">
+            <div class="header-row">
+               <img src="./images/logo.png" width="120" alt="10 Eleven Consultant">
+            
+               <ul class="list-inline social-links">
+                  
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               </ul>
             </div>
+            <br>
+            <h2 class="modal-title" style="font-size: 40px;"><b>Get a Call from <span style="color: rgb(255, 238, 0);">Us!</span></b></h2>
+            <br>
+            
+            <form role="form" class="contactform">
+               <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+               </div>
+               <div class="form-group">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+               </div>
+               <div class="form-group">
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+               </div>
+               <div class="form-group">
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+               </div>
+               <div class="form-group">
+                  <textarea class="form-control" id="message" name="message" placeholder="Message" maxlength="140" rows="4"></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary btn-block">
+               Submit Form
+               </button>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+
+
             <!-- end section -->
             <section class="section ldp">
                <div class="logo-slider">
@@ -796,7 +811,7 @@
          <!-- end second footer -->
          </div>
          <!-- end wrapper -->
-<!-- Load jQuery before other libraries that depend on it -->
+           <!-- Load jQuery before other libraries that depend on it -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- Load Bootstrap JS (use only one version, either v3 or v5, but not both) -->
@@ -805,6 +820,20 @@
 
 <!-- OR This is the Bootstrap v5 version (preferred) -->
 <!-- <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+   $(document).ready(function(){
+       // Show modal when the page is loaded
+       $('#myModal').modal('show');
+   });
+</script>
+
+<script>
+   AOS.init();
+</script>
 
 <!-- Load Google Translate script -->
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -815,7 +844,7 @@
 <script src="js/translation-map.js"></script>
 
 <!-- Load other custom scripts -->
-<script src="js/components.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/parallax.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/owl.carousel.js"></script>
