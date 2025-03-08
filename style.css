@@ -3381,27 +3381,81 @@ RESPONSIVE
 
 
 .jurisdiction-card {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Adjust as needed */
-    border-radius: 10px;
-    text-align: center;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: space-between;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    color: white !important; /* Force text to be white */
-    transition: background 0.5s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.342);
+  background-color: #242424;
+  color: rgb(255, 255, 255) !important;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
+
+/* Title Styling */
+.jurisdiction-title {
+  color: #ffffff !important;
+  font-weight: 900;
+  font-size: 36px;
+}
+
 
 .jurisdiction-card:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-                url('upload/mainland.jpeg') center/cover no-repeat;
-    transform: scale(1.05); /* Slightly enlarges card */
+  transform: scale(1.05);
 }
 
+/* List Items */
+.details ul {
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+}
+
+.details li {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.checkmark {
+  color: #FFD700; /* Gold color */
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+
+/* Enquiry Link */
+.enquiry-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 12px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.enquiry-link i {
+  margin-left: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.enquiry-link:hover {
+  color: #ffee00;
+  transform: translateX(5px);
+}
+
+.enquiry-link:hover i {
+  transform: translateX(5px);
+}
  @media (max-width: 768px) {
         .jurisdiction-card {
             min-height: auto;
@@ -3474,7 +3528,7 @@ RESPONSIVE
     background: white;
     color: black;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -3514,7 +3568,8 @@ RESPONSIVE
 
 /* Hover Effect */
 .service-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
+    
 }
 
 .button-28 {
@@ -4115,4 +4170,3 @@ input, select {
   color: #007bff;
 }
 /*Model End*/
-
