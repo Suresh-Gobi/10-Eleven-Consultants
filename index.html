@@ -29,15 +29,12 @@
             />
          <!-- Custom & Default Styles -->
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
          <link rel="stylesheet" href="css/font-awesome.min.css" />
          <link rel="stylesheet" href="css/bootstrap.min.css" />
          <link rel="stylesheet" href="css/animate.css" />
          <link rel="stylesheet" href="css/carousel.css" />
          <link rel="stylesheet" href="style.css" />
-         <!--[if lt IE 9]>
-         <script src="js/vendor/html5shiv.min.js"></script>
-         <script src="js/vendor/respond.min.js"></script>
-         <![endif]-->
       </head>
       <body>
          <div id="wrapper">
@@ -47,209 +44,281 @@
                      <div class="col-md-6 col-sm-6 hidden-xs">
                         <nav class="topbar-menu">
                            <ul class="list-inline">
-                           <li>Follow us:</li>
-                           <li>
-                              <a href="#"><i class="fa fa-facebook"></i></a>
-                           </li>
-                           <li>
-                              <a href="#"><i class="fa fa-twitter"></i></a>
-                           </li>
-                           <li>
-                              <a href="#"><i class="fa fa-linkedin"></i></a>
-                           </li>
-                           <!-- end list -->
+                              <li>Follow us:</li>
+                              <li>
+                                 <a href="#"><i class="fa fa-facebook"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                           </ul>
                         </nav>
-                        <!-- end menu -->
                      </div>
-                     <!-- end col -->
                      <div class="col-md-6 col-sm-6">
                         <nav class="topbar-menu">
                            <ul class="list-inline text-right navbar-right">
-                              <li class="dropdown">
-                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                                    ><img src="images/us.png" alt="" /> English
-                                 <span class="fa fa-angle-down"></span
-                                    ></a>
-                                 <ul class="dropdown-menu">
-                                    <li>
-                                       <a href="#"
-                                          ><img src="images/tr.png" alt="" /> Turkish</a
-                                          >
-                                    </li>
-                                    <li>
-                                       <a href="#"
-                                          ><img src="images/si.png" alt="" /> Spanish</a
-                                          >
-                                    </li>
-                                    <li>
-                                       <a href="#"
-                                          ><img src="images/it.png" alt="" /> Italian</a
-                                          >
-                                    </li>
-                                    <li>
-                                       <a href="#"
-                                          ><img src="images/ae.png" alt="" /> Arabic</a
-                                          >
-                                    </li>
-                                    <li>
-                                       <a href="#"
-                                          ><img src="images/de.png" alt="" /> German</a
-                                          >
-                                    </li>
-                                 </ul>
+                              <li>
+                                 <div class="ct-topbar">
+                                    <ul class="list-unstyled list-inline ct-topbar__list">
+                                       <li class="ct-language">
+                                          <div class="language-selector">
+                                             <i class="fa fa-globe" aria-hidden="true"></i>
+                                             <span class="google-translator-text">English</span>
+                                             <i class="fa fa-caret-down"></i>
+                                          </div>
+                                          <ul class="list-unstyled ct-language__dropdown">
+                                             <li>
+                                                <a
+                                                   href="#googtrans(en|en)"
+                                                   class="lang-en lang-select"
+                                                   data-lang="en"
+                                                   ><img class="country-translate" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>English</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a href="#googtrans(en|ar)" class="lang-ar lang-select" data-lang="ar">
+                                                <img src="https://img.icons8.com/color/48/united-arab-emirates.png" alt="Arab" class="country-translate" />
+                                                Arabic
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a
+                                                   href="#googtrans(en|hi)"
+                                                   class="lang-es lang-select"
+                                                   data-lang="hi"
+                                                   ><img
+                                                   src="https://img.icons8.com/color/48/india.png"
+                                                   alt="INDIA"
+                                                   class="country-translate"
+                                                   />Hindi</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a
+                                                   href="#googtrans(en|ta)"
+                                                   class="lang-es lang-select"
+                                                   data-lang="ta"
+                                                   ><img
+                                                   src="https://img.icons8.com/color/48/india.png"
+                                                   alt="INDIA"
+                                                   class="country-translate"
+                                                   />Tamil</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a
+                                                   href="#googtrans(en|fr)"
+                                                   class="lang-es lang-select"
+                                                   data-lang="fr"
+                                                   ><img
+                                                   src="https://img.icons8.com/color/48/france.png"
+                                                   alt="France"
+                                                   class="country-translate"
+                                                   />French</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a
+                                                   href="#googtrans(en|de)"
+                                                   class="lang-es lang-select"
+                                                   data-lang="de"
+                                                   ><img
+                                                   src="https://img.icons8.com/color/48/germany.png"
+                                                   alt="GERMAN"
+                                                   class="country-translate"
+                                                   />German</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a
+                                                   href="#googtrans(en|id)"
+                                                   class="lang-en lang-select"
+                                                   data-lang="id"
+                                                   ><img
+                                                   src="https://img.icons8.com/color/48/indonesia.png"
+                                                   alt="INDONESIA"
+                                                   class="country-translate"
+                                                   />Indonesian</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a
+                                                   href="#googtrans(en|th)"
+                                                   class="lang-es lang-select"
+                                                   data-lang="th"
+                                                   ><img
+                                                   src="https://img.icons8.com/color/48/thailand.png"
+                                                   alt="THAILAND"
+                                                   class="country-translate"
+                                                   />Thai</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a
+                                                   href="#googtrans(en|ja)"
+                                                   class="lang-es lang-select"
+                                                   data-lang="ja"
+                                                   ><img
+                                                   src="https://img.icons8.com/color/48/japan.png"
+                                                   alt="JAPAN"
+                                                   class="country-translate"
+                                                   />Japanese</a
+                                                   >
+                                             </li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </div>
                               </li>
                               <li class="hidden-xs">
-                                 <i class="fa fa-clock-o"></i>Mon - Fri 09:00 am to 06:00 pm UAE (GMT+4)
+                                 <i class="fa fa-clock-o"></i> Mon - Fri 09:00 am to 06:00 pm UAE
+                                 (GMT+4)
                               </li>
-                              <li><i class="fa fa-phone"></i> +971 58 546 6786 </li>
+                              <li><a href="tel:+971585466786"><i class="fa fa-phone"></i> +971 58 546 6786</a></li>
                            </ul>
-                           <!-- end list -->
                         </nav>
-                        <!-- end menu -->
                      </div>
-                     <!-- end col -->
                   </div>
-                  <!-- end row -->
                </div>
-               <!-- end container -->
             </div>
-            <!-- end topbar -->
             <header class="header site-header">
-               <div class="container">
-                  <nav class="navbar navbar-default yamm">
-                     <div class="container-fluid">
-                        <div class="navbar-header">
-                           <button
-                              type="button"
-                              class="navbar-toggle collapsed"
-                              data-toggle="collapse"
-                              data-target="#navbar"
-                              aria-expanded="false"
-                              aria-controls="navbar"
-                              >
-                           <span class="sr-only">Toggle navigation</span>
-                           <span class="icon-bar"></span>
-                           <span class="icon-bar"></span>
-                           <span class="icon-bar"></span>
-                           </button>
-                           <a class="navbar-brand" href="index.html"
-                              ><img src="images/logo.png" alt="Linda"
-                              /></a>
-                        </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                           <ul class="nav navbar-nav navbar-right">
-                              <li class="active"><a href="index.html">Home</a></li>
-                              <li><a href="about.html">About Us</a></li>
-                              <li class="dropdown yamm-fw hasmenu">
-                                 <a
-                                    href="#"
-                                    class="dropdown-toggle"
-                                    data-toggle="dropdown"
-                                    role="button"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Company formation <span class="fa fa-angle-down"></span
-                                    ></a>
-                                 <ul class="dropdown-menu">
-                                    <li>
-                                       <div class="yamm-content">
-                                          <div class="row">
-                                             <div class="col-md-4">
-                                                <ul>
-                                                   <li>
-                                                      <a href="companyformation.html"
-                                                         >Company Formation</a
-                                                         >
-                                                   </li>
-                                                   <li>
-                                                      <a href="companyformation.html"
-                                                         >Mainland Company Setup</a
-                                                         >
-                                                   </li>
-                                                   <li>
-                                                      <a href="companyformation.html"
-                                                         >Freezone Company Setup</a
-                                                         >
-                                                   </li>
-                                                   <li>
-                                                      <a href="companyformation.html"
-                                                         >Offshore Company Setup</a
-                                                         >
-                                                   </li>
-                                                </ul>
+               <div class="containerr-default yamm">
+                  <div class="container-width">
+                     <nav class="navbar navbar-default yamm">
+                        <div class="container-fluid">
+                           <div class="navbar-header">
+                              <button
+                                 type="button"
+                                 class="navbar-toggle collapsed"
+                                 data-toggle="collapse"
+                                 data-target="#navbar"
+                                 aria-expanded="false"
+                                 aria-controls="navbar"
+                                 >
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="index.html"
+                                 ><img src="images/logo.png" alt="Linda" width="200"
+                                 /></a>
+                           </div>
+                           <div id="navbar" class="navbar-collapse collapse">
+                              <ul class="nav navbar-nav navbar-right">
+                                 <li class="active"><a href="index.html">Home</a></li>
+                                 <li><a href="about.html" target="_blank">About Us</a></li>
+                                 <li class="dropdown yamm-fw hasmenu">
+                                    <a
+                                       href="#"
+                                       class="dropdown-toggle"
+                                       data-toggle="dropdown"
+                                       role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false"
+                                       >Company formation <span class="fa fa-angle-down"></span
+                                       ></a>
+                                    <ul class="dropdown-menu">
+                                       <li>
+                                          <div class="yamm-content">
+                                             <div class="row">
+                                                <div class="col-md-4">
+                                                   <ul>
+                                                      <li>
+                                                         <a href="companyformation.html" target="_blank"
+                                                            >Company Formation</a
+                                                            >
+                                                      </li>
+                                                      <li>
+                                                         <a href="companyformation.html#mainland" target="_blank"
+                                                            >Mainland Company Setup</a
+                                                            >
+                                                      </li>
+                                                      <li>
+                                                         <a href="companyformation.html#freezone" target="_blank"
+                                                            >Freezone Company Setup</a
+                                                            >
+                                                      </li>
+                                                      <li>
+                                                         <a href="companyformation.html#offshore" target="_blank"
+                                                            >Offshore Company Setup</a
+                                                            >
+                                                      </li>
+                                                   </ul>
+                                                </div>
                                              </div>
                                           </div>
-                                       </div>
-                                    </li>
-                                 </ul>
-                              </li>
-                              <li class="dropdown yamm-fw hasmenu">
-                                 <a
-                                    href="#"
-                                    class="dropdown-toggle"
-                                    data-toggle="dropdown"
-                                    role="button"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Services <span class="fa fa-angle-down"></span
-                                    ></a>
-                                 <ul class="dropdown-menu">
-                                    <li>
-                                       <div class="yamm-content">
-                                          <div class="row">
-                                             <div class="col-md-4">
-                                                <ul>
-                                                   <li>
-                                                      <a href="services.html"
-                                                         >Services</a
-                                                         >
-                                                   </li>
-                                                   <li>
-                                                      <a href="services.html"
-                                                         >PRO Services (DED, Immigration & Labor)</a
-                                                         >
-                                                   </li>
-                                                   <li>
-                                                      <a href="services.html"
-                                                         >Accounting & Tax Consultancy</a
-                                                         >
-                                                   </li>
-                                                   <li>
-                                                      <a href="services.html"
-                                                         >Bank Account Opening</a
-                                                         >
-                                                   </li>
-                                                   <li>
-                                                      <a href="services.html"
-                                                         >Trademark Registration</a
-                                                         >
-                                                   </li>
-                                                   <li>
-                                                      <a href="services.html"
-                                                         >Legal Consultancy
-                                                      </a>
-                                                   </li>
-                                                </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="dropdown yamm-fw hasmenu">
+                                    <a
+                                       href="#"
+                                       class="dropdown-toggle"
+                                       data-toggle="dropdown"
+                                       role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false"
+                                       >Services <span class="fa fa-angle-down"></span
+                                       ></a>
+                                    <ul class="dropdown-menu">
+                                       <li>
+                                          <div class="yamm-content">
+                                             <div class="row">
+                                                <div class="col-md-4">
+                                                   <ul>
+                                                      <li>
+                                                        <a href="services.html" target="_blank"
+                                                          >Services</a
+                                                        >
+                                                      </li>
+                                                      <li>
+                                                        <a href="services.html#proservices" target="_blank"
+                                                          >PRO Services (DED, Immigration &
+                                                          Labor)</a
+                                                        >
+                                                      </li>
+                                                      <li>
+                                                        <a href="services.html#accounting" target="_blank"
+                                                          >Accounting & Tax Consultancy</a
+                                                        >
+                                                      </li>
+                                                      <li>
+                                                        <a href="services.html#bankaccount" target="_blank"
+                                                          >Bank Account Opening</a
+                                                        >
+                                                      </li>
+                                                      <li>
+                                                        <a href="services.html#trademark" target="_blank"
+                                                          >Trademark Registration</a
+                                                        >
+                                                      </li>
+                                                      <li>
+                                                        <a href="services.html#legal" target="_blank"
+                                                          >Legal Consultancy</a
+                                                        >
+                                                      </li>
+                                                    </ul>
+                                                </div>
                                              </div>
                                           </div>
-                                       </div>
-                                    </li>
-                                 </ul>
-                              </li>
-                              <li><a href="contact.html">Contact</a></li>
-                              <li class="lastlink hidden-xs hidden-sm">
-                              </li>
-                              <a href="costcalculator.html" class="btn button-28">Cost
-                              Calculator</a>
-                           </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li><a href="contact.html" target="_blank">Contact</a></li>
+                                 <li class="lastlink hidden-xs hidden-sm"></li>
+                                 <a href="costcalculator.html" class="btn button-28" target="_blank"
+                                    >Cost Calculator</a
+                                    >
+                              </ul>
+                           </div>
                         </div>
-                        <!--/.nav-collapse -->
-                     </div>
-                     <!--/.container-fluid -->
-                  </nav>
-                  <!-- end nav -->
+                     </nav>
+                  </div>
                </div>
-               <!-- end container -->
             </header>
             <!-- end header -->
             <section
@@ -262,7 +331,7 @@
                >
                <div class="container">
                   <div class="row">
-                     <div class="col-md-10 col-md-offset-1 col-sm-12 text-left">
+                     <div class="col-md-10 col-md-offset-1 col-sm-12 text-left" data-aos="fade-up" ata-aos-delay="3000">
                         <h3 style="
                            background-color: #F8F6F4;
                            color: #181818;
@@ -271,7 +340,8 @@
                            border-radius: 8px; 
                            font-weight: bold;
                            font-size: 28px;
-                           ">
+                           "
+                           >
                            #Your Trusted Business Partner in Dubai
                         </h3>
                         <h2 style="font-size: 75px;">Start Your Business in the <span style="color: rgb(255, 213, 0);">UAE</span> with Ease</h2>
@@ -284,17 +354,24 @@
                </div>
                <!-- end container -->
             </section>
+            <!-- Modal -->
             <div id="myModal" class="modal fade" role="dialog">
-               <div class="modal-dialog">
+               <div class="modal-dialog modal-xl">
                   <!-- Modal content -->
-                  <div class="modal-content">
-                     <div class="modal-header">
-                     </div>
-                     <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h2 class="modal-title text-center">Get a Call from Us</h2>
-                        <hr/>
-                        <form role="form" class="contactform" >
+                  <div class="modal-content custom-modal">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <div class="modal-body text-center">
+                        <div class="header-row">
+                           <img src="./images/logo.png" width="120" alt="10 Eleven Consultant">
+                           <ul class="list-inline social-links">
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           </ul>
+                        </div>
+                        <br>
+                        <h2 class="modal-title" style="font-size: 40px;"><b>Get a Call from <span style="color: rgb(255, 238, 0);">Us!</span></b></h2>
+                        <br>
+                        <form role="form" class="contactform">
                            <div class="form-group">
                               <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                            </div>
@@ -370,256 +447,260 @@
             <!-- end section -->
             <section class="section bt">
                <div class="container">
-                   <div class="section-title text-center">
-                       <h4 style="color: rgb(42, 42, 42)">Choose Your Jurisdiction</h4>
-                       <h2 class="big-title">
-                           <span class="black-text">Business Setup in Dubai</span> 
-                       </h2>
-                       <br/>
-                   </div>
-                   <!-- end section-title -->
-           
-                   <div class="row">
-                       <!-- Mainland -->
-                       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                           <div class="jurisdiction-card" 
-                                style="background: linear-gradient(rgba(0, 0, 0, 0.252), rgb(0, 0, 0)), 
-                                       url('upload/mainland.jpeg') center/cover no-repeat;">
-                               <h3 class="title text-center">Mainland</h3>
-                               <div class="details">
-                                   <ul>
-                                       <li>No local UAE sponsor fees</li>
-                                       <li>Understand your corporate tax obligations</li>
-                                       <li>Complimentary P.O. Box number in Dubai</li>
-                                       <li>Access to over 1,000 professional activities to choose from</li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                       <!-- Free Zone -->
-                       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                           <div class="jurisdiction-card" 
-                                style="background: linear-gradient(rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.931)), 
-                                       url('upload/freezone.jpg') center/cover no-repeat;">
-                               <h3 class="title text-center">Free Zone</h3>
-                               <div class="details">
-                                   <ul>
-                                       <li>100% foreign ownership in Freezone companies</li>
-                                       <li>Multiple shareholders</li>
-                                       <li>Tax exemptions and incentives</li>
-                                       <li>Dedicated relationship manager</li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                       <!-- Offshore -->
-                       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                           <div class="jurisdiction-card" 
-                                style="background: linear-gradient(rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.931)), 
-                                       url('images/Offshore.jpg') center/cover no-repeat;">
-                               <h3 class="title text-center">Offshore</h3>
-                               <div class="details">
-                                   <ul>
-                                       <li>100% Foreign Ownership</li>
-                                       <li>100% Import and Export Tax Exemption</li>
-                                       <li>100% Repatriation of Capital and Profit</li>
-                                       <li>Abundant and Inexpensive Energy</li>
-                                       <li>Personal Income Tax Exemption</li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <!-- end row -->
-               </div>
-           </section>
-         <section class="services">
-            <div class="container">
-               <p>Our Services</p>
-               <h2 class="section-title"></h2>
-               <h2 class="big-title">
-                  <span class="white-text">What We </span> 
-                  <span class="white-text" style="color: rgb(255, 213, 0);">Do</span>
-               </h2>
-               <p class="section-subtitle">
-                  Let us take care of your accounting, audit, and financial management needs 
-                  with our comprehensive VAT-compliant services!
-               </p>
-               <br/>
-               <div class="service-grid">
-                  <div class="service-card">
-                     <img src="images/PRO Services.png" alt="Business Setup">
-                     <h3>PRO Services (DED, Immigration & Labor)</h3>
-                     <p>
-                        Simplify business setup with our expert PRO services.
-                     </p>
+                  <div class="section-title text-center">
+                     <h4 style="color: rgb(42, 42, 42)" data-aos="fade-up">Choose Your Jurisdiction</h4>
+                     <h2 class="big-title">
+                        <span class="black-text" data-aos="fade-up">Setup Your Business in Dubai</span> 
+                     </h2>
+                     <br/>
                   </div>
-                  <div class="service-card">
-                     <img src="images/Accounting.png" alt="Accounting">
-                     <h3>Accounting & Tax Consultancy</h3>
-                     <p>
-                        Professional accounting and tax advice.
-                     </p>
-                  </div>
-                  <div class="service-card">
-                     <img src="images/Bank Account Opening.png" alt="Audit">
-                     <h3>Bank Account Opening</h3>
-                     <p>
-                        Hassle-free bank account opening services.
-                     </p>
-                  </div>
-                  <div class="service-card">
-                     <img src="images/Trademark Registration.png" alt="Legal">
-                     <h3>Trademark Registration</h3>
-                     <p>
-                        Secure your brand with trademark registration.
-                     </p>
-                  </div>
-                  <div class="service-card">
-                     <img src="images/Legal Consultancy.png" alt="ICV Certification">
-                     <h3>Legal Consultancy</h3>
-                     <p>
-                        Expert legal advice for your business.
-                     </p>
-                  </div>
-                  <div class="service-card">
-                     <img src="images/Liquidation.png" alt="Liquidation">
-                     <h3>Liquidation</h3>
-                     <p>
-                        Efficient liquidation services for your business.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="section overfree" style="width: 100%;">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-7 col-sm-12">
-                     <div class="about-widget">
-                        <h2 class="big-title">Why Choose 10 Elevent Consultant?</h2>
-                        <p class="lead">
-                           <b>Empowering businesses with expert consultancy, strategic insights, and tailored solutions for sustainable success.</b>
-                        </p>
-                        <p>
-                           At <strong>10 Elevent Consultant</strong>, we bring years of expertise in business consulting, helping entrepreneurs and organizations establish, scale, and thrive in a competitive market. Our data-driven approach, industry knowledge, and commitment to excellence set us apart.
-                        </p>
-                        <p>
-                           Whether you are launching a new business, expanding into new markets, or optimizing your current operations, our team provides comprehensive guidance and practical strategies tailored to your goals.
-                        </p>
-                        <p>
-                           Partner with us and experience seamless business growth, regulatory compliance, and long-term success.
-                        </p>
-                     </div>
-                  </div>
-                  <!-- end col -->
-                  <div class="col-md-5 col-sm-12">
-                     <div class="milestone-counter parallax back1">
-                        <img src="images/icon_07.png" alt="" class="alignleft" />
-                        <br/>
-                        <h3>Happy Clients</h3>
-                        <br/>
-                     </div>
-                     <div class="milestone-counter parallax back2">
-                        <img src="images/icon_08.png" alt="" class="alignleft" />
-                        <br/>
-                        <h3>Successful Strategies</h3>
-                        <br/>
-                     </div>
-                     <div class="milestone-counter parallax back3">
-                        <img src="images/icon_09.png" alt="" class="alignleft" />
-                        <p></p>
-                        <br/>
-                        <h3>Proven Business Results</h3>
-                        <br/>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- end section -->
-         <!-- FAQ 1 - Bootstrap Brain Component -->
-         <section class="" style="background-color:white; padding: 30px 0;">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6">
-                     <img class="img-responsive img-rounded" src="./images/Untitled-1.png" alt="How can we help you?">
-                  </div>
-                  <div class="col-md-6">
-                     <h2 class="big-title">How can we help you?</h2>
-                     <p class="lead text-muted">We hope you have found an answer to your question. If you need any help, please search your query on our contact us via email.</p>
-                     <div class="panel-group" id="faqAccordion">
-                        <!-- FAQ 1 -->
-                        <div class="panel panel-default">
-                           <div class="panel-heading">
-                              <h4 class="panel-title">
-                                 <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1" style="font-size: 20px;">
-                                 What are the benefits of setting up a Free Zone company?
-                                 </a>
-                              </h4>
-                           </div>
-                           <div id="faq1" class="panel-collapse collapse in">
-                              <div class="panel-body">
-                                 <p>Free Zones offer 100% foreign ownership, tax exemptions, and streamlined processes for international businesses. Some zones are industry-specific, which can provide additional benefits tailored to your business activity.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- FAQ 2 -->
-                        <div class="panel panel-default">
-                           <div class="panel-heading">
-                              <h4 class="panel-title">
-                                 <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2" class="collapsed" style="font-size: 20px;">
-                                 Can a Free Zone company trade directly with UAE customers?
-                                 </a>
-                              </h4>
-                           </div>
-                           <div id="faq2" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                 Yes, free zone companies can trade directly with UAE residents and businesses without restrictions, providing greater market access.
-                              </div>
-                           </div>
-                        </div>
-                        <!-- FAQ 4 -->
-                        <div class="panel panel-default">
-                           <div class="panel-heading">
-                              <h4 class="panel-title">
-                                 <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq4" class="collapsed" style="font-size: 20px;">
-                                 How long does it take to set up a company in the UAE?
-                                 </a>
-                              </h4>
-                           </div>
-                           <div id="faq4" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                 <p>The timeline varies based on the jurisdiction you choose. Free Zone setups or Mainland companies for specific activities can take as little as 3–5 working days.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- FAQ 5 -->
-                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                           <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq5" class="collapsed" style="font-size: 20px;">
-                              What documents are required for company formation?
+                  <!-- end section-title -->
+                  <div class="row">
+                     <!-- Mainland -->
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4"  data-aos="fade-up">
+                        <div class="jurisdiction-card">
+                           <span class="jurisdiction-title text-center">Mainland</span>
+                           <div class="details">
+                              <ul>
+                                 <li> <span class="checkmark">✔</span> No local UAE sponsor fees</li>
+                                 <li> <span class="checkmark">✔</span> Clear corporate tax obligations</li>
+                                 <li> <span class="checkmark">✔</span> Complimentary Dubai P.O. Box</li>
+                                 <li> <span class="checkmark">✔</span> Access to 1,000+ professional activities</li>
+                              </ul>
+                              <a href="#" class="enquiry-link" target="_blank">
+                              Enquiry Now <i class="fa fa-arrow-right"></i>
                               </a>
-                           </h4>
+                           </div>
                         </div>
-                        <div id="faq5" class="panel-collapse collapse">
-                           <div class="panel-body">
-                              <p>Common requirements include passport copies of shareholders, proof of address, business plan, and initial approval from relevant authorities. We guide you through the full list based on your specific setup.</p>
+                     </div>
+                     <!-- Free Zone -->
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4"  data-aos="fade-up">
+                        <div class="jurisdiction-card">
+                           <span class="jurisdiction-title text-center">Free Zone
+                           </span>
+                           <div class="details">
+                              <ul>
+                                 <li> <span class="checkmark">✔</span> 100% foreign ownership</li>
+                                 <li> <span class="checkmark">✔</span> Multiple shareholders</li>
+                                 <li> <span class="checkmark">✔</span> Tax exemptions & incentives</li>
+                                 <li> <span class="checkmark">✔</span> Dedicated relationship manager</li>
+                              </ul>
+                              <a href="#" class="enquiry-link" target="_blank">
+                              Enquiry Now <i class="fa fa-arrow-right"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Offshore -->
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+                        <div class="jurisdiction-card">
+                           <span class="jurisdiction-title text-center">Offshore</span>
+                           <div class="details">
+                              <ul>
+                                 <li> <span class="checkmark">✔</span> 100% Foreign Ownership</li>
+                                 <li> <span class="checkmark">✔</span> Tax Advantages</li>
+                                 <li> <span class="checkmark">✔</span> 100% Repatriation of Capital & Profit</li>
+                                 <li> <span class="checkmark">✔</span> Low-Cost Operations</li>
+                              </ul>
+                              <a href="#" class="enquiry-link" target="_blank">
+                              Enquiry Now <i class="fa fa-arrow-right"></i>
+                              </a>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <!-- /panel-group -->
+                  <!-- end row -->
                </div>
-            </div>
-            </div>
+            </section>
+            <section class="services">
+               <div class="container">
+                  <h4 style="color: #F8F6F4;" data-aos="fade-up">Our Services</h4>
+                  <h2 class="section-title"></h2>
+                  <h2 class="big-title" data-aos="fade-up">
+                     <span class="white-text">How We Empower Your</span> 
+                     <span class="white-text" style="color: rgb(255, 213, 0);">Business</span>
+                  </h2>
+                  <p class="section-subtitle" data-aos="fade-up">
+                     Effortless accounting, auditing, and financial management – all VAT-compliant and tailored for your business success!
+                  </p>
+                  <br/>
+                  <div class="service-grid">
+                     <div class="service-card" data-aos="fade-up">
+                        <img src="images/PRO Services.png" alt="Business Setup">
+                        <h3>PRO Services (DED, Immigration & Labor)</h3>
+                        <p>
+                           Simplify business setup with our expert PRO services.
+                        </p>
+                     </div>
+                     <div class="service-card" data-aos="fade-up">
+                        <img src="images/Accounting.png" alt="Accounting">
+                        <h3>Accounting & Tax Consultancy</h3>
+                        <p>
+                           Professional accounting and tax advice.
+                        </p>
+                     </div>
+                     <div class="service-card" data-aos="fade-up">
+                        <img src="images/Bank Account Opening.png" alt="Audit">
+                        <h3>Bank Account Opening</h3>
+                        <p>
+                           Hassle-free bank account opening services.
+                        </p>
+                     </div>
+                     <div class="service-card" data-aos="fade-up">
+                        <img src="images/Trademark Registration.png" alt="Legal">
+                        <h3>Trademark & Product Registration
+                        </h3>
+                        <p>
+                           Secure your brand with trademark & product registration.
+                        </p>
+                     </div>
+                     <div class="service-card" data-aos="fade-up">
+                        <img src="images/Legal Consultancy.png" alt="ICV Certification">
+                        <h3>Legal Consultancy</h3>
+                        <p>
+                           Expert legal advice for your business.
+                        </p>
+                     </div>
+                     <div class="service-card" data-aos="fade-up">
+                        <img src="images/Liquidation.png" alt="Liquidation">
+                        <h3> Third Party Approvals</h3>
+                        <p>
+                           Third-Party Approvals – Fast approvals from Dubai Municipality, RTA, SIRA, and RERA for seamless business operations.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section>
+               <div class="row callout bgcolor">
+                  <div class="col-md-9">
+                     <p class="lead" data-aos="fade-up">Hundreds of happy clients trust us—why not you? Let's grow your business and boost your website traffic together.</p>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="button-wrap text-center">
+                        <a class="btn button-29" data-toggle="modal" data-target="#myModal" data-aos="fade-up">Contact us today!</a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="section overfree" style="width: 100%;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-7 col-sm-12">
+                        <div class="about-widget">
+                           <h2 class="big-title" data-aos="fade-up">Why Choose 10Eleven Consultants?</h2>
+                           <br/>
+                           <div class="milestone-counter c1" data-aos="fade-up">
+                              <img src="https://img.icons8.com/ios/100/batch-assign.png" height="70" width="70" alt="" class="alignleft">
+                              <h2 class="stat-count" style="color: #181818;">20+</h2>
+                              <p style="color: #181818;">Happy Customers</p>
+                           </div>
+                           <div class="milestone-counter c1" data-aos="fade-up">
+                              <img src="https://img.icons8.com/ios/100/neutral-trading.png" height="70" width="70" alt="" class="alignleft">
+                              <h2 class="stat-count" style="color: #181818;">30+</h2>
+                              <p style="color: #181818;">Successful Strategies</p>
+                           </div>
+                           <div class="milestone-counter c1" data-aos="fade-up">
+                              <img src="https://img.icons8.com/wired/64/inspection.png" height="70" width="70" alt="" class="alignleft">
+                              <h2 class="stat-count" style="color: #181818;">50+</h2>
+                              <p style="color: #181818;">Proven Business Results</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end col -->
+                     <div class="col-md-5 col-sm-12"data-aos="fade-up">
+                        <br/>
+                        <br/>
+                        <br/>
+                        <img src="./images/why choose us.jpg" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- end section -->
+            <!-- FAQ 1 - Bootstrap Brain Component -->
+            <section class="" style="background-color:white; padding: 30px 0;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <br/>
+                        <img class="img-responsive img-rounded" src="./images/faqs.jpg" alt="How can we help you?" data-aos="fade-up" >
+                     </div>
+                     <div class="col-md-6">
+                        <h2 class="big-title" data-aos="fade-up">How can we help you?</h2>
+                        <br/>
+                        <div class="panel-group" id="faqAccordion" data-aos="fade-up">
+                           <!-- FAQ 1 -->
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1" style="font-size: 20px;">
+                                    What are the benefits of setting up a Free Zone company?
+                                    </a>
+                                 </h4>
+                              </div>
+                              <div id="faq1" class="panel-collapse collapse in">
+                                 <div class="panel-body">
+                                    <p>Free Zones offer 100% foreign ownership, tax exemptions, and streamlined processes for international businesses. Some zones are industry-specific, which can provide additional benefits tailored to your business activity.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- FAQ 2 -->
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2" class="collapsed" style="font-size: 20px;">
+                                    Can a Free Zone company trade directly with UAE customers?
+                                    </a>
+                                 </h4>
+                              </div>
+                              <div id="faq2" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    Yes, free zone companies can trade directly with UAE residents and businesses without restrictions, providing greater market access.
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- FAQ 4 -->
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq4" class="collapsed" style="font-size: 20px;">
+                                    How long does it take to set up a company in the UAE?
+                                    </a>
+                                 </h4>
+                              </div>
+                              <div id="faq4" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <p>The timeline varies based on the jurisdiction you choose. Free Zone setups or Mainland companies for specific activities can take as little as 3–5 working days.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- FAQ 5 -->
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                              <h4 class="panel-title">
+                                 <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq5" class="collapsed" style="font-size: 20px;">
+                                 What documents are required for company formation?
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="faq5" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Common requirements include passport copies of shareholders, proof of address, business plan, and initial approval from relevant authorities. We guide you through the full list based on your specific setup.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- /panel-group -->
+                  </div>
+               </div>
+         </div>
          </section>
          <section class="section">
             <div class="container">
                <div class="row contactv2 text-center">
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos="fade-up">
                      <div class="small-box">
                         <i class="flaticon-message"></i>
                         <h4>Contact us today</h4>
@@ -630,19 +711,19 @@
                      <!-- end small-box -->
                   </div>
                   <!-- end col -->
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos="fade-up">
                      <div class="small-box">
                         <i class="flaticon-home-marker"></i>
                         <h4>Visit Our Office</h4>
                         <small>Aspin Commercial Tower, 10th floor,
                         </small>
                         <small>Sheikh Zayed Road, Dubai</small>
-                        <p><a href="#">View on Google Map</a></p>
+                        <p><a href="http://127.0.0.1:5500/faqs.html">View on Google Map</a></p>
                      </div>
                      <!-- end small-box -->
                   </div>
                   <!-- end col -->
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos="fade-up">
                      <div class="small-box">
                         <i class="flaticon-user"></i>
                         <h4>Be Social</h4>
@@ -662,79 +743,98 @@
          <!-- end section -->
          <footer class="nb-footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center mb-3">
-                        <div class="about">
-                            <div class="social-media">
-                                <ul class="list-inline">
-                                    <li class="list-inline-item"><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+               <div class="row">
+                  <div class="col-12 text-center mb-3">
+                     <div class="about">
+                        <div class="social-media">
+                           <ul class="list-inline">
+                              <li class="list-inline-item"><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
+                           </ul>
                         </div>
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-6 col-12 mb-4">
-                        <div class="footer-info-single">
-                            <h2 class="title">About Company</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 mb-4">
-                        <div class="footer-info-single">
-                            <h2 class="title">Quick Links</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="about.html" title=""><i class="fa fa-angle-double-right"></i> About us</a></li>
-                                <li><a href="companyformation.html" title=""><i class="fa fa-angle-double-right"></i> Company Formation</a></li>
-                                <li><a href="services.html" title=""><i class="fa fa-angle-double-right"></i> Services</a></li>
-                                <li><a href="contact.html" title=""><i class="fa fa-angle-double-right"></i> Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 mb-4">
-                        <div class="footer-info-single">
-                            <h2 class="title">Our Services</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> PRO Services</a></li>
-                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Accounting & Tax Consultancy</a></li>
-                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Bank Account Opening</a></li>
-                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Trademark Registration</a></li>
-                                <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Legal Consultancy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 mb-4">
-                        <div class="footer-info-single">
-                            <h2 class="title">Security & Privacy</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="terms-&-conditions.html" title=""><i class="fa fa-angle-double-right"></i> Terms & Conditions</a></li>
-                                <li><a href="refund-policy.html" title=""><i class="fa fa-angle-double-right"></i> Refund Policy</a></li>
-                                <li><a href="privacy-policy.html" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 mb-4">
+                     <div class="footer-info-single">
+                        <h2 class="title">About Company</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 mb-4">
+                     <div class="footer-info-single">
+                        <h2 class="title">Quick Links</h2>
+                        <ul class="list-unstyled">
+                           <li><a href="about.html" title=""><i class="fa fa-angle-double-right"></i> About us</a></li>
+                           <li><a href="companyformation.html" title=""><i class="fa fa-angle-double-right"></i> Company Formation</a></li>
+                           <li><a href="services.html" title=""><i class="fa fa-angle-double-right"></i> Services</a></li>
+                           <li><a href="contact.html" title=""><i class="fa fa-angle-double-right"></i> Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 mb-4">
+                     <div class="footer-info-single">
+                        <h2 class="title">Our Services</h2>
+                        <ul class="list-unstyled">
+                           <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> PRO Services</a></li>
+                           <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Accounting & Tax Consultancy</a></li>
+                           <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Bank Account Opening</a></li>
+                           <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Trademark Registration</a></li>
+                           <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Legal Consultancy</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 mb-4">
+                     <div class="footer-info-single">
+                        <h2 class="title">Security & Privacy</h2>
+                        <ul class="list-unstyled">
+                           <li><a href="terms-&-conditions.html" title=""><i class="fa fa-angle-double-right"></i> Terms & Conditions</a></li>
+                           <li><a href="refund-policy.html" title=""><i class="fa fa-angle-double-right"></i> Refund Policy</a></li>
+                           <li><a href="privacy-policy.html" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
             <section class="copyright">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-12">
-                            <p>Copyright &copy; 2025. 10 Eleven Consultant</p>
-                        </div>
-                    </div>
-                </div>
+               <div class="container">
+                  <div class="row text-center">
+                     <div class="col-12">
+                        <p>Copyright &copy; 2025. 10 Eleven Consultant</p>
+                     </div>
+                  </div>
+               </div>
             </section>
-        </footer>
+         </footer>
          <!-- end second footer -->
          </div>
          <!-- end wrapper -->
-         <!-- jQuery Files -->
+         <!-- Load jQuery before other libraries that depend on it -->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <!-- Load Bootstrap JS (use only one version, either v3 or v5, but not both) -->
+         <!-- This is the Bootstrap v3 version -->
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-         <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-         <script src="js/jquery.min.js"></script>
-         <script src="js/bootstrap.min.js"></script>
+         <!-- OR This is the Bootstrap v5 version (preferred) -->
+         <!-- <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+         <!-- AOS JavaScript -->
+         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+         <script>
+            $(document).ready(function(){
+                // Show modal when the page is loaded
+                $('#myModal').modal('show');
+            });
+         </script>
+         <script>
+            AOS.init();
+         </script>
+         <!-- Load Google Translate script -->
+         <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+         <!-- Load custom scripts related to translation -->
+         <script src="js/translate.js"></script>
+         <script src="js/google-translate-element.js"></script>
+         <script src="js/translation-map.js"></script>
+         <!-- Load other custom scripts -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
          <script src="js/parallax.js"></script>
          <script src="js/animate.js"></script>
          <script src="js/owl.carousel.js"></script>
