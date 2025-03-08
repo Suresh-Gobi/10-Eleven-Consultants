@@ -374,11 +374,35 @@
     </div>
     <!-- end wrapper -->
 
-    <!-- jQuery Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Load jQuery before other libraries that depend on it -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Load Bootstrap JS (use only one version, either v3 or v5, but not both) -->
+    <!-- This is the Bootstrap v3 version -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- OR This is the Bootstrap v5 version (preferred) -->
+    <!-- <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+       $(document).ready(function(){
+           // Show modal when the page is loaded
+           $('#myModal').modal('show');
+       });
+    </script>
+    <script>
+       AOS.init();
+    </script>
+    <!-- Load Google Translate script -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Load custom scripts related to translation -->
+    <script src="js/translate.js"></script>
+    <script src="js/google-translate-element.js"></script>
+    <script src="js/translation-map.js"></script>
+    <!-- Load other custom scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

@@ -3794,7 +3794,7 @@ figcaption {
 }
 
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   z-index: 2000;
   left: 0;
@@ -3813,7 +3813,7 @@ figcaption {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 8px;
-  /* display: flex; */
+  display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
