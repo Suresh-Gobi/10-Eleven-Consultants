@@ -716,10 +716,6 @@ hr.invis2 {
   margin: 40px 0;
 }
 
-.about-widget {
-  position: relative;
-  padding-left: 100px;
-}
 
 .about-widget ul {
   margin-bottom: 25px;
@@ -1205,7 +1201,12 @@ MODULEs
   padding: 10px;
   margin: 0 0 5px;
   margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.678);
+border-radius: 10px;
+  width: 80%;
 }
+ 
+
 
 .milestones hr {
   border-color: #ffffff;
@@ -1563,7 +1564,7 @@ PRICING BOX
 }
 
 .milestone-counter.c1 {
-  background: #37bdc5 !important;
+  background: #ffffff !important;
 }
 
 .home-service:hover.c1,
