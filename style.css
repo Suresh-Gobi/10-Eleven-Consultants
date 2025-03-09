@@ -4171,3 +4171,77 @@ input, select {
   color: #007bff;
 }
 /*Model End*/
+
+/*pre aoder*/
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side, #ffa516 94%, transparent) top/8px 8px no-repeat,
+    conic-gradient(transparent 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 8px), #000 0);
+  animation: spin 1s infinite linear;
+}
+
+.loader-logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin { 
+  100% { transform: rotate(1turn); }
+}
+
+/*pre oader end*/
+
+/*Top*/
+
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #ffa516;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-up:hover {
+  background: #ff8c00;
+}
+
+.scroll-up.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Top End*/

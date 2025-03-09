@@ -43,6 +43,10 @@
   </head>
   <body>
     <div id="wrapper">
+      <div class="loader-container" id="loader">
+         <div class="loader"></div>
+         <img src="./images/favicon.ico" alt="Company Logo" class="loader-logo">
+       </div>
       <div class="topbar">
          <div class="container">
             <div class="row">
@@ -450,7 +454,7 @@
       <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3609.827145535462!2d55.2724800109863!3d25.2090511322021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428853023db3%3A0x6e63a9fe6b2d7cfe!2sAspin%20Commercial%20Tower%20-%20106%20Sheikh%20Zayed%20Rd%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2slk!4v1740421852902!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       
-
+      <button id="scrollUpBtn" class="scroll-up"><i class="fa fa-arrow-up"></i></button>
       <footer class="nb-footer">
         <div class="container">
             <div class="row">
@@ -554,7 +558,8 @@
           }
       });
   </script>
-  
+  <script src="./js/loader.js"></script>
+  <script src="./js/scrollUp.js"></script>
     <!-- Load jQuery before other libraries that depend on it -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Load Bootstrap JS (use only one version, either v3 or v5, but not both) -->

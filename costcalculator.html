@@ -43,6 +43,10 @@
   </head>
   <body>
     <div id="wrapper">
+      <div class="loader-container" id="loader">
+         <div class="loader"></div>
+         <img src="./images/favicon.ico" alt="Company Logo" class="loader-logo">
+       </div>
       <div class="topbar">
          <div class="container">
             <div class="row">
@@ -658,7 +662,7 @@
       </section>
       <!-- end section -->
 
-      
+      <button id="scrollUpBtn" class="scroll-up"><i class="fa fa-arrow-up"></i></button>
 
       <footer class="nb-footer">
         <div class="container">
@@ -772,7 +776,8 @@
 
   </script>
 
-  
+<script src="./js/loader.js"></script>
+<script src="./js/scrollUp.js"></script>
     <!-- Load jQuery before other libraries that depend on it -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Load Bootstrap JS (use only one version, either v3 or v5, but not both) -->

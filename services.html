@@ -43,6 +43,10 @@
   </head>
   <body>
     <div id="wrapper">
+      <div class="loader-container" id="loader">
+        <div class="loader"></div>
+        <img src="./images/favicon.ico" alt="Company Logo" class="loader-logo">
+      </div>
       <div class="topbar">
         <div class="container">
           <div class="row">
@@ -565,7 +569,7 @@
         <!-- end container -->
       </section>
       <!-- end section -->
-
+      <button id="scrollUpBtn" class="scroll-up"><i class="fa fa-arrow-up"></i></button>
       <footer class="nb-footer">
         <div class="container">
             <div class="row">
@@ -635,7 +639,8 @@
       <!-- end second footer -->
     </div>
     <!-- end wrapper -->
-
+    <script src="./js/loader.js"></script>
+    <script src="./js/scrollUp.js"></script>
     <!-- jQuery Files -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
