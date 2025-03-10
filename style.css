@@ -131,7 +131,7 @@ SKELETON
 ************************************/
 
 body {
-  background-color: #f1f6f7;
+  background-color: #ffffff;
   color: #595959;
   font-size: 16px;
   font-weight: 300;
@@ -1197,16 +1197,32 @@ MODULEs
   background: rgba(0, 0, 0, 0) url("upload/team-about.jpg") repeat fixed top center !important;
 }
 
+.milestone-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .milestone-counter {
   padding: 10px;
   margin: 0 0 5px;
-  margin-top: 20px;
+  margin-top: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.678);
 border-radius: 10px;
-  width: 80%;
-}
- 
+  width: 50%;
+  
+  text-align: center;
+   flex: 1;
+   min-width: 200px;
 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
 
 .milestones hr {
   border-color: #ffffff;
@@ -2620,7 +2636,7 @@ FOOTER
 
 footer.nb-footer {
   background: #222;
-  border-top: 4px solid rgb(255, 213, 0); }
+  border-top: 4px solid #ff8c00; }
   footer.nb-footer .about {
   margin: 0 auto;
   margin-top: 40px;
@@ -2639,19 +2655,19 @@ footer.nb-footer {
   line-height: 45px;
   border-radius: 50%;
   font-size: 16px;
-  color: rgb(255, 213, 0);
+  color: #ff8c00;
   border: 1px solid rgba(255, 255, 255, 0.3); }
   footer.nb-footer .about .social-media ul li a:hover {
-  background: rgb(255, 213, 0);
+  background: #ff8c00;
   color: #fff;
-  border-color: rgb(255, 213, 0); }
+  border-color: #ff8c00; }
   footer.nb-footer .footer-info-single {
   margin-top: 30px; }
   footer.nb-footer .footer-info-single .title {
   color: #aaa;
   text-transform: uppercase;
   font-size: 16px;
-  border-left: 4px solid rgb(255, 213, 0);
+  border-left: 4px solid #ff8c00;
   padding-left: 5px; }
   footer.nb-footer .footer-info-single ul li a {
   display: block;
@@ -2951,7 +2967,7 @@ COLORS
 .feature-list hr,
 .navbar-default .navbar-nav > .active > a,
 .form-control:focus {
-  border-color: rgb(255, 213, 0);
+  border-color: #ff8c00;
   font-weight: bold;
 }
 
@@ -3362,133 +3378,7 @@ RESPONSIVE
   }
 }
 
-.big-title {
-    font-size: 50px;
-    font-weight: bold;
-}
 
-.black-text {
-    color: rgb(42, 42, 42);
-}
-
-.white-text {
-  color: rgb(255, 255, 255);
-}
-
-.blue-text {
-    color: blue;
-}
-
-
-
-.jurisdiction-card {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  border-radius: 10px;
-  text-align: center;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: space-between;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.342);
-  background-color: #242424;
-  color: rgb(255, 255, 255) !important;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Title Styling */
-.jurisdiction-title {
-  color: #ffffff !important;
-  font-weight: 900;
-  font-size: 36px;
-}
-
-
-.jurisdiction-card:hover {
-  transform: scale(1.05);
-}
-
-/* List Items */
-.details ul {
-  list-style: none;
-  padding: 0;
-  z-index: 2;
-}
-
-.details li {
-  font-size: 18px;
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-.checkmark {
-  color: #FFD700; /* Gold color */
-  font-size: 22px;
-  font-weight: bold;
-  margin-right: 8px;
-}
-
-
-/* Enquiry Link */
-.enquiry-link {
-  display: inline-flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-  margin-top: 12px;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.enquiry-link i {
-  margin-left: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.enquiry-link:hover {
-  color: #ffee00;
-  transform: translateX(5px);
-}
-
-.enquiry-link:hover i {
-  transform: translateX(5px);
-}
- @media (max-width: 768px) {
-        .jurisdiction-card {
-            min-height: auto;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .jurisdiction-card h3 {
-            font-size: 24px;
-        }
-
-        .jurisdiction-card ul li {
-            font-size: 14px;
-        }
-    }
-
-.jurisdiction-card h3,
-.jurisdiction-card p {
-    color: white !important; /* Ensure text is white */
-}
-
-.title {
-    font-size: 24px; /* Title size */
-    font-weight: bold;
-    margin-bottom: 15px; /* Space below title */
-}
-
-.details p {
-    font-size: 16px;
-    padding: 5px 0; /* Padding for details */
-    margin: 0;
-}
 
 
 /* Section Styling */
@@ -3671,10 +3561,10 @@ RESPONSIVE
 .button-29 {
   appearance: none;
   background-color: transparent;
-  border: 2px solid #ffdd00;
+  border: 2px solid #ff8c00;
   border-radius: 10px;
   box-sizing: border-box;
-  color: #ffdd00;
+  color: #ff8c00;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -3804,6 +3694,7 @@ figcaption {
   background-color: rgba(0, 0, 0, 0.5);
   border-color: #000;
   border-width: 50px;
+  overflow-y: auto;
 }
 .modal-content {
   background-color: #fff;
@@ -3814,6 +3705,19 @@ figcaption {
   position: relative;
   border-radius: 8px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-content-contact {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10% auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 8px;
   flex-direction: row;
   align-items: center;
   gap: 20px;
@@ -3831,6 +3735,51 @@ figcaption {
   right: 15px;
   font-size: 24px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    width: 90%;
+    padding: 15px;
+    margin: 15% auto;
+  }
+
+  .modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .modal-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .modal-text h2 {
+    font-size: 24px;
+  }
+
+  .modal-text p {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 10px;
+  }
+
+  .modal-text h2 {
+    font-size: 22px;
+  }
+
+  .modal-text p {
+    font-size: 14px;
+  }
 }
 
 
@@ -4163,7 +4112,7 @@ input, select {
 .social-links li a {
   text-decoration: none;
   font-size: 20px;
-  color: rgb(255, 238, 0);
+  color: #ff8c00;
   transition: color 0.3s ease;
 }
 
@@ -4171,3 +4120,517 @@ input, select {
   color: #007bff;
 }
 /*Model End*/
+
+/*pre aoder*/
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side, #ffa516 94%, transparent) top/8px 8px no-repeat,
+    conic-gradient(transparent 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 8px), #000 0);
+  animation: spin 1s infinite linear;
+}
+
+.loader-logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin { 
+  100% { transform: rotate(1turn); }
+}
+
+/*pre oader end*/
+
+/*Top*/
+
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #ffa516;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-up:hover {
+  background: #ff8c00;
+}
+
+.scroll-up.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Top End*/
+
+.text {
+  flex: 1;
+}
+.text h2 {
+  color: black;
+  font-size: 28px;
+}
+.text span {
+  color: #ff8c00;
+  font-weight: bold;
+}
+.text p {
+  margin: 15px 0;
+  color: #555;
+  line-height: 1.6;
+}
+.images {
+  flex: 1;
+  display: grid;
+  gap: 15px;
+}
+.images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.section-vision {
+  height: 80vh;
+  background-color: #111;
+  padding: 60px 40px;
+  border-radius: 10px;
+  background-color: #111;
+}
+
+.section-vision h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.section-vision text {
+  flex: none;
+ }
+
+ .section-vision img {
+  padding-top: 05px;
+  width: 100%;
+  border-radius: 10px;
+ }
+
+ .section-contact {
+  height: 60vh;
+  background-color: white;
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+  .section-vision {
+    height: 110vh;
+  }
+
+  .section-vision h2 {
+    font-size: 45px !important;
+  }
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-contact {
+    text-align: center;
+    margin-top: 50px; 
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-contact {
+    margin-top: 30px;
+    padding: 20px 10px;
+  }
+}
+
+
+ /*Section Hero*/
+ .section-hero {
+  background: linear-gradient(135deg, rgba(33, 33, 33, 0.778), rgba(5, 5, 5, 0.424)), 
+              url('upload/bg_04.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-hero h2 {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 75px ; 
+}
+
+.section-hero h3 {
+  background-color: #F8F6F4;
+  color: #181818;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.section-hero span {
+  color: #ff8c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-hero {
+    padding-top: -80px;
+  }
+  .section-hero h2 {
+    font-size: 40px;
+  }
+
+  .section-hero h3 {
+    font-size: 28px !important;
+  }
+
+  .button-29{
+    margin-left: 20px !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .section-hero h2 {
+    font-size: 45px !important;
+  }
+
+
+  .section-hero h3 {
+    font-size: 18px;
+  }
+}
+
+ /*Section Hero End*/
+
+ /*Setion Jurisdiction*/
+ .big-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.black-text {
+  color: rgb(42, 42, 42);
+}
+
+.white-text {
+  color: rgb(255, 255, 255);
+}
+
+.blue-text {
+  color: blue;
+}
+
+.jurisdiction-card {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.jurisdiction-title {
+  color: #ffc916 !important;
+  font-weight: 900;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+.jurisdiction-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.342);
+}
+
+.card-front {
+  background-color: #242424;
+  color: white;
+}
+
+.card-back {
+  background-color: #ffa516;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+}
+
+.details li {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.checkmark {
+  color: #FFD700;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.enquiry-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 12px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.enquiry-link i {
+  margin-left: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.enquiry-link:hover {
+  color: #ffee00;
+  transform: translateX(5px);
+}
+
+.enquiry-link:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .jurisdiction-card {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+
+  .card-front, 
+  .card-back {
+    width: 90%;
+    height: 0px;
+  }
+
+  .big-title {
+    font-size: 45px !important;
+  }
+
+  .jurisdiction-card {
+    min-height: auto;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .jurisdiction-title {
+    font-size: 28px;
+  }
+
+  .jurisdiction-card h3 {
+    font-size: 24px;
+  }
+
+  .jurisdiction-card ul li {
+    font-size: 14px;
+  }
+
+  .card-front, 
+  .card-back {
+    height: 280px;
+    padding: 15px;
+  }
+
+  .details li {
+    font-size: 16px;
+  }
+
+  .enquiry-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .big-title {
+    font-size: 30px;
+  }
+
+  .jurisdiction-title {
+    font-size: 24px;
+  }
+
+  .jurisdiction-card h3 {
+    font-size: 20px;
+  }
+
+  .jurisdiction-card ul li {
+    font-size: 12px;
+  }
+
+  .card-front, 
+  .card-back {
+    height: 250px;
+    padding: 10px;
+  }
+
+  .details li {
+    font-size: 14px;
+  }
+
+  .enquiry-link {
+    font-size: 14px;
+  }
+}
+
+ /*Setion Jurisdiction End*/
+
+ /*section-why*/
+
+ .section-why img{
+  width: 110%; height: 100%; padding-top: 30px;
+}
+ @media (max-width: 768px) {
+.section-why{
+  text-align: center;
+}
+.section-why h2{
+  font-size: 45px !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ }
+ /*section-why*/
+
+
+ /*section-faqs*/
+.section-faqs{
+  background-color:rgb(250, 246, 233); padding: 30px 0;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+.section-faqs h2{
+ text-align: center;
+}
+}
+ /*section-faqs end*/
+
+
+/*About us*/
+.section-about{
+  
+  background: linear-gradient(
+    135deg,
+    rgba(33, 33, 33, 0.778),
+    rgba(5, 5, 5, 0.424)
+    ),
+    url('upload/team-about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-about .big-title {
+  font-size: 48px;
+}
+
+
+.section-who{
+  height: auto;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .section-who h2{
+   font-size: 45px !important;
+  }
+}
+/*About us End*/
+
+
+/*Company Formation*/
+
+.section-formation p{
+  color: #000;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.section-formation li{
+  color: #000;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/*Company Formation End*/
+
+
+/*Services*/
+.section-service{
+  margin-bottom: 50px;
+}
+/*Services*/

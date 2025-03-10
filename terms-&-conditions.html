@@ -43,6 +43,10 @@
   </head>
   <body>
     <div id="wrapper">
+      <div class="loader-container" id="loader">
+         <div class="loader"></div>
+         <img src="./images/favicon.ico" alt="Company Logo" class="loader-logo">
+       </div>
       <div class="topbar">
         <div class="container">
            <div class="row">
@@ -151,7 +155,7 @@
                            role="button"
                            aria-haspopup="true"
                            aria-expanded="false"
-                           >Company formation <span class="fa fa-angle-down"></span
+                           >Company Formation <span class="fa fa-angle-down"></span
                            ></a>
                         <ul class="dropdown-menu">
                            <li>
@@ -159,11 +163,7 @@
                                  <div class="row">
                                     <div class="col-md-4">
                                        <ul>
-                                          <li>
-                                             <a href="companyformation.html"
-                                                >Company Formation</a
-                                                >
-                                          </li>
+                                          
                                           <li>
                                              <a href="companyformation.html"
                                                 >Mainland Company Setup</a
@@ -202,11 +202,7 @@
                                  <div class="row">
                                     <div class="col-md-4">
                                        <ul>
-                                          <li>
-                                             <a href="services.html"
-                                                >Services</a
-                                                >
-                                          </li>
+                                          
                                           <li>
                                              <a href="services.html"
                                                 >PRO Services (DED, Immigration & Labor)</a
@@ -314,7 +310,7 @@
   
       <!-- end section -->
 
-
+      <button id="scrollUpBtn" class="scroll-up"><i class="fa fa-arrow-up"></i></button>
       <footer class="nb-footer">
          <div class="container">
              <div class="row">
@@ -333,7 +329,7 @@
                  <div class="col-md-3 col-sm-6 col-12 mb-4">
                      <div class="footer-info-single">
                          <h2 class="title">About Company</h2>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         <p>10Eleven Consultants – Your trusted partner for seamless business setup and growth in the UAE. From company formation to post-setup support, we help your business thrive.</p>
                      </div>
                  </div>
                  <div class="col-md-3 col-sm-6 col-12 mb-4">
@@ -386,6 +382,8 @@
     <!-- end wrapper -->
 
     <!-- jQuery Files -->
+    <script src="./js/loader.js"></script>
+    <script src="./js/scrollUp.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/parallax.js"></script>
