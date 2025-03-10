@@ -131,7 +131,7 @@ SKELETON
 ************************************/
 
 body {
-  background-color: #f1f6f7;
+  background-color: #ffffff;
   color: #595959;
   font-size: 16px;
   font-weight: 300;
@@ -2636,7 +2636,7 @@ FOOTER
 
 footer.nb-footer {
   background: #222;
-  border-top: 4px solid rgb(255, 213, 0); }
+  border-top: 4px solid #ff8c00; }
   footer.nb-footer .about {
   margin: 0 auto;
   margin-top: 40px;
@@ -2655,19 +2655,19 @@ footer.nb-footer {
   line-height: 45px;
   border-radius: 50%;
   font-size: 16px;
-  color: rgb(255, 213, 0);
+  color: #ff8c00;
   border: 1px solid rgba(255, 255, 255, 0.3); }
   footer.nb-footer .about .social-media ul li a:hover {
-  background: rgb(255, 213, 0);
+  background: #ff8c00;
   color: #fff;
-  border-color: rgb(255, 213, 0); }
+  border-color: #ff8c00; }
   footer.nb-footer .footer-info-single {
   margin-top: 30px; }
   footer.nb-footer .footer-info-single .title {
   color: #aaa;
   text-transform: uppercase;
   font-size: 16px;
-  border-left: 4px solid rgb(255, 213, 0);
+  border-left: 4px solid #ff8c00;
   padding-left: 5px; }
   footer.nb-footer .footer-info-single ul li a {
   display: block;
@@ -2967,7 +2967,7 @@ COLORS
 .feature-list hr,
 .navbar-default .navbar-nav > .active > a,
 .form-control:focus {
-  border-color: rgb(255, 213, 0);
+  border-color: #ff8c00;
   font-weight: bold;
 }
 
@@ -3708,10 +3708,10 @@ RESPONSIVE
 .button-29 {
   appearance: none;
   background-color: transparent;
-  border: 2px solid #ffdd00;
+  border: 2px solid #ff8c00;
   border-radius: 10px;
   box-sizing: border-box;
-  color: #ffdd00;
+  color: #ff8c00;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4212,7 +4212,7 @@ input, select {
 .social-links li a {
   text-decoration: none;
   font-size: 20px;
-  color: rgb(255, 238, 0);
+  color: #ff8c00;
   transition: color 0.3s ease;
 }
 
@@ -4344,4 +4344,9 @@ input, select {
   padding-top: 05px;
   width: 100%;
   border-radius: 10px;
+ }
+
+ .section-contact{
+  background-color: white;
+  margin-top: 100px;
  }
