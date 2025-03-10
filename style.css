@@ -4320,3 +4320,28 @@ input, select {
   width: 100%;
   border-radius: 10px;
 }
+
+
+.section-vision {
+  height: 80vh;
+  background-color: #111;
+  padding: 60px 40px;
+  border-radius: 10px;
+  background-color: #111;
+}
+
+.section-vision h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.section-vision text {
+  flex: none;
+ }
+
+ .section-vision img {
+  padding-top: 05px;
+  width: 100%;
+  border-radius: 10px;
+ }
