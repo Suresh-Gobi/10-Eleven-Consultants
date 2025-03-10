@@ -3378,154 +3378,7 @@ RESPONSIVE
   }
 }
 
-.big-title {
-    font-size: 50px;
-    font-weight: bold;
-}
 
-.black-text {
-    color: rgb(42, 42, 42);
-}
-
-.white-text {
-  color: rgb(255, 255, 255);
-}
-
-.blue-text {
-    color: blue;
-}
-
-
-
-.jurisdiction-card {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  perspective: 1000px;
-}
-
-.card-inner {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-.jurisdiction-title {
-  color: #ffc916 !important;
-  font-weight: 900;
-  font-size: 36px;
-}
-
-
-.jurisdiction-card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  width: 100%;
-  height: 350px;
-  position: absolute;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.342);
-}
-
-.card-front {
-  background-color: #242424;
-  color: white;
-}
-
-.card-back {
-  background-color: #ffa516;
-  color: black;
-  transform: rotateY(180deg);
-}
-
-.details ul {
-  list-style: none;
-  padding: 0;
-  z-index: 2;
-}
-
-.details li {
-  font-size: 18px;
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-.checkmark {
-  color: #FFD700;
-  font-size: 22px;
-  font-weight: bold;
-  margin-right: 8px;
-}
-
-
-/* Enquiry Link */
-.enquiry-link {
-  display: inline-flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-  margin-top: 12px;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.enquiry-link i {
-  margin-left: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.enquiry-link:hover {
-  color: #ffee00;
-  transform: translateX(5px);
-}
-
-.enquiry-link:hover i {
-  transform: translateX(5px);
-}
- @media (max-width: 768px) {
-        .jurisdiction-card {
-            min-height: auto;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .jurisdiction-card h3 {
-            font-size: 24px;
-        }
-
-        .jurisdiction-card ul li {
-            font-size: 14px;
-        }
-    }
-
-.jurisdiction-card h3,
-.jurisdiction-card p {
-    color: white !important; /* Ensure text is white */
-}
-
-.title {
-    font-size: 24px; /* Title size */
-    font-weight: bold;
-    margin-bottom: 15px; /* Space below title */
-}
-
-.details p {
-    font-size: 16px;
-    padding: 5px 0; /* Padding for details */
-    margin: 0;
-}
 
 
 /* Section Styling */
@@ -4346,7 +4199,319 @@ input, select {
   border-radius: 10px;
  }
 
- .section-contact{
+ .section-contact {
   background-color: white;
   margin-top: 100px;
+  padding: 40px 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-contact {
+    text-align: center;
+    margin-top: 50px; 
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-contact {
+    margin-top: 30px;
+    padding: 20px 10px;
+  }
+}
+
+
+ /*Section Hero*/
+ .section-hero {
+  background: linear-gradient(135deg, rgba(33, 33, 33, 0.778), rgba(5, 5, 5, 0.424)), 
+              url('upload/bg_04.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-hero h2 {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 75px ; 
+}
+
+.section-hero h3 {
+  background-color: #F8F6F4;
+  color: #181818;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.section-hero span {
+  color: #ff8c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-hero {
+    padding-top: -80px;
+  }
+  .section-hero h2 {
+    font-size: 40px;
+  }
+
+  .section-hero h3 {
+    font-size: 28px !important;
+  }
+
+  .button-29{
+    margin-left: 20px !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .section-hero h2 {
+    font-size: 45px !important;
+  }
+
+
+  .section-hero h3 {
+    font-size: 18px;
+  }
+}
+
+ /*Section Hero End*/
+
+ /*Setion Jurisdiction*/
+ .big-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.black-text {
+  color: rgb(42, 42, 42);
+}
+
+.white-text {
+  color: rgb(255, 255, 255);
+}
+
+.blue-text {
+  color: blue;
+}
+
+.jurisdiction-card {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.jurisdiction-title {
+  color: #ffc916 !important;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.jurisdiction-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.342);
+}
+
+.card-front {
+  background-color: #242424;
+  color: white;
+}
+
+.card-back {
+  background-color: #ffa516;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+}
+
+.details li {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.checkmark {
+  color: #FFD700;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.enquiry-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 12px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.enquiry-link i {
+  margin-left: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.enquiry-link:hover {
+  color: #ffee00;
+  transform: translateX(5px);
+}
+
+.enquiry-link:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .jurisdiction-card {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+
+  .card-front, 
+  .card-back {
+    width: 90%;
+    height: 0px;
+  }
+
+  .big-title {
+    font-size: 45px !important;
+  }
+
+  .jurisdiction-card {
+    min-height: auto;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .jurisdiction-title {
+    font-size: 28px;
+  }
+
+  .jurisdiction-card h3 {
+    font-size: 24px;
+  }
+
+  .jurisdiction-card ul li {
+    font-size: 14px;
+  }
+
+  .card-front, 
+  .card-back {
+    height: 280px;
+    padding: 15px;
+  }
+
+  .details li {
+    font-size: 16px;
+  }
+
+  .enquiry-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .big-title {
+    font-size: 30px;
+  }
+
+  .jurisdiction-title {
+    font-size: 24px;
+  }
+
+  .jurisdiction-card h3 {
+    font-size: 20px;
+  }
+
+  .jurisdiction-card ul li {
+    font-size: 12px;
+  }
+
+  .card-front, 
+  .card-back {
+    height: 250px;
+    padding: 10px;
+  }
+
+  .details li {
+    font-size: 14px;
+  }
+
+  .enquiry-link {
+    font-size: 14px;
+  }
+}
+
+ /*Setion Jurisdiction End*/
+
+ /*section-why*/
+
+ .section-why img{
+  width: 110%; height: 100%; padding-top: 30px;
+}
+ @media (max-width: 768px) {
+.section-why{
+  text-align: center;
+}
+.section-why h2{
+  font-size: 45px !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
  }
+ /*section-why*/
+
+
+ /*section-faqs*/
+.section-faqs{
+  background-color:rgb(250, 246, 233); padding: 30px 0;
+}
+
+@media (max-width: 768px) {
+.section-faqs h2{
+ text-align: center;
+}
+}
+ /*section-faqs end*/
