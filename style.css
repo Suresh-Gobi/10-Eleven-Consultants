@@ -4206,6 +4206,17 @@ input, select {
   padding: 40px 20px;
 }
 
+@media (max-width: 768px) {
+  .section-vision {
+    height: 110vh;
+  }
+
+  .section-vision h2 {
+    font-size: 45px !important;
+  }
+
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .section-contact {
@@ -4324,6 +4335,7 @@ input, select {
   color: #ffc916 !important;
   font-weight: 900;
   font-size: 36px;
+  padding-bottom: 20px;
 }
 
 .jurisdiction-card:hover .card-inner {
@@ -4518,3 +4530,36 @@ input, select {
 }
 }
  /*section-faqs end*/
+
+
+/*About us*/
+.section-about{
+  
+  background: linear-gradient(
+    135deg,
+    rgba(33, 33, 33, 0.778),
+    rgba(5, 5, 5, 0.424)
+    ),
+    url('upload/team-about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-about .big-title {
+  font-size: 48px;
+}
+
+
+.section-who{
+  height: auto;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .section-who h2{
+   font-size: 45px !important;
+  }
+}
+/*About us End*/
