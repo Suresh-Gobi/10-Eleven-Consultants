@@ -4281,6 +4281,10 @@ input, select {
   border-radius: 10px;
 }
 
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
 
 .section-vision {
   height: 80vh;
