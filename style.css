@@ -4439,7 +4439,7 @@ input, select {
 }
 
 .jurisdiction-title {
-  color: #ffc916 !important;
+  color: #ff8c00; !important;
   font-weight: 900;
   font-size: 36px;
   padding-bottom: 20px;
@@ -4471,7 +4471,7 @@ input, select {
 }
 
 .card-back {
-  background-color: #ffa516;
+  background-color: #ff8c00;
   color: black;
   transform: rotateY(180deg);
 }
@@ -4488,11 +4488,11 @@ input, select {
   font-weight: 500;
 }
 
-.checkmark {
-  color: #FFD700;
-  font-size: 22px;
-  font-weight: bold;
-  margin-right: 8px;
+.checkmark::before {
+    content: "✔";
+    color: #ff8c00;
+    font-weight: bold;
+    margin-right: 8px;
 }
 
 .enquiry-link {
